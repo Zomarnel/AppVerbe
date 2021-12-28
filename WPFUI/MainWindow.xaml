@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Menu" Background="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2"/>
+        <Label Content="Buttons" Background="Aquamarine" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Content="Console" Background="Beige" Grid.Row="2" Grid.Column="0"/>
+        <Label Content="Verbs" Background="BurlyWood" Grid.Column="1" Grid.Row="2"/>
+        
+
+    </Grid>
+</Window>

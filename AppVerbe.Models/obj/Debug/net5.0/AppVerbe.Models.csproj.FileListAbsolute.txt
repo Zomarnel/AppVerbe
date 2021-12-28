@@ -1,0 +1,16 @@
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Models.deps.json
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Models.dll
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\ref\AppVerbe.Models.dll
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Models.pdb
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Core.dll
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Core.pdb
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.csproj.AssemblyReference.cache
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.AssemblyInfoInputs.cache
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.AssemblyInfo.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.csproj.CoreCompileInputs.cache
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.csproj.Fody.CopyLocal.cache
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.csproj.CopyComplete
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.dll
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\ref\AppVerbe.Models.dll
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.pdb

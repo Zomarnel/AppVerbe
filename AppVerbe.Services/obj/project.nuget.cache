@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "05IUR1+aSGbS3RDwm3/3Atkwg7FCtFMd/w8IxOdfukIDqZtfOGwjS+bIxbhPiGB2q+ZcEUgrSZwIDeGi7Ihh5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bouazza\\Desktop\\C#Projects\\AppVerbe\\AppVerbe.Services\\AppVerbe.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bouazza\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

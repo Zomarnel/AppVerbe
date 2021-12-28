@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/VdOg74IIvF386Upe71K5OVhGTMa/duZJ8vU5TIv/QDj8Y+aq0rkA2U5/XzpnCSh7Mghj4jz7ZlncYFsnkurZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bouazza\\Desktop\\C#Projects\\AppVerbe\\WPFUI\\WPFUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bouazza\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
