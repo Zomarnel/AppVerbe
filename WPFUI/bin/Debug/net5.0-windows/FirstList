@@ -1,3 +1,13 @@
 {
-  "Verbes": null
+  "Verbes": [
+    {
+      "Name": "manger",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "mange"
+        }
+      ]
+    }
+  ]
 }

@@ -12,8 +12,13 @@ namespace AppVerbe.Services
         {
             if(!File.Exists(fileName))
             {
+                AppData appData = new AppData();
+                List<ConjuguatedForm> e = new List<ConjuguatedForm>();
+                e.Add(new ConjuguatedForm(1, "mange"));
+
+                appData.Verbes.Add(new Verbe("manger", e));
                 File.WriteAllText(fileName,
-                                  JsonConvert.SerializeObject(new AppData(), Formatting.Indented));
+                                  JsonConvert.SerializeObject(appData, Formatting.Indented));
             }
 
             return new AppData();
