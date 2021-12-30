@@ -11,9 +11,7 @@ namespace AppVerbe.ViewModels
         public AppData AppData { get; set; }
         public AppSession()
         {
-            AppData = SavingService.LoadListOrCreateNewOne("TestList.omar");
 
-            SavingService.SaveList(AppData, "OmarList.omar");
         }
     }
 }

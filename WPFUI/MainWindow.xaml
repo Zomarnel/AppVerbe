@@ -17,12 +17,31 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        
+        <!--Buttons-->
+        <Grid Background="Aquamarine" Grid.Row="1" Grid.ColumnSpan="2">
 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Load List"
+                    Grid.Column="0"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Click="LoadGame_OnClick"/>
+
+            <Button Content="Save List"
+                    Grid.Column="1"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Click="SaveGame_OnClick"/>
+        </Grid>
+        
+        <!--Labels-->
         <Label Content="Menu" Background="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2"/>
-        <Label Content="Buttons" Background="Aquamarine" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Label Content="Console" Background="Beige" Grid.Row="2" Grid.Column="0"/>
         <Label Content="Verbs" Background="BurlyWood" Grid.Column="1" Grid.Row="2"/>
-        
 
     </Grid>
 </Window>
