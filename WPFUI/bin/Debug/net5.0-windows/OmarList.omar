@@ -1,0 +1,63 @@
+{
+  "Name": "TestList",
+  "Verbes": [
+    {
+      "Name": "manger",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "manges"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "mangeons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "mangez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "mangent"
+        }
+      ]
+    },
+    {
+      "Name": "boire",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "bois"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "bois"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "boit"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "buvons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "buvez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "boivent"
+        }
+      ]
+    }
+  ]
+}

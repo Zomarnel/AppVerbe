@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -12,17 +13,38 @@ namespace AppVerbe.Services
         {
             if(!File.Exists(fileName))
             {
-                AppData appData = new AppData();
-                List<ConjuguatedForm> e = new List<ConjuguatedForm>();
-                e.Add(new ConjuguatedForm(1, "mange"));
-
-                appData.Verbes.Add(new Verbe("manger", e));
-                File.WriteAllText(fileName,
-                                  JsonConvert.SerializeObject(appData, Formatting.Indented));
+                throw new FileNotFoundException($"Filename: {fileName}");
             }
 
-            return new AppData();
+            JObject data = JObject.Parse(File.ReadAllText(fileName));
 
+            return CreateAppData(data);
+
+        }
+        public static void SaveList(AppData appData, string fileName)
+        {
+            File.WriteAllText(fileName,
+                              JsonConvert.SerializeObject(appData, Formatting.Indented));
+        }
+        private static AppData CreateAppData(JObject data)
+        {
+            List<Verbe> verbes = new List<Verbe>();
+
+            foreach(JToken verbToken in (JArray)data[nameof(AppData.Verbes)])
+            {
+                List<ConjuguatedForm> conjuguatedForms = new List<ConjuguatedForm>();
+
+                foreach(JToken conjuguationToken in (JArray)verbToken[nameof(Verbe.ConjuguatedForms)])
+                {
+                    conjuguatedForms.Add(new ConjuguatedForm((int)conjuguationToken[nameof(ConjuguatedForm.Personne)],
+                                                              (string)conjuguationToken[nameof(ConjuguatedForm.VerbeConjugué)]));
+                }
+
+                verbes.Add(new Verbe((string)verbToken[nameof(Verbe.Name)],
+                                     conjuguatedForms));
+            }
+
+            return new AppData((string)data[nameof(AppData.Name)], verbes);
         }
     }
 }

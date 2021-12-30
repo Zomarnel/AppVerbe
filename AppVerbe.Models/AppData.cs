@@ -4,6 +4,12 @@ namespace AppVerbe.Models
 {
     public class AppData
     {
-        public List<Verbe> Verbes { get; init; } = new List<Verbe>();
+        public string Name { get; set; }
+        public List<Verbe> Verbes { get; }
+        public AppData(string name, List<Verbe> verbes)
+        {
+            Name = name;
+            Verbes = verbes;
+        }
     }
 }
