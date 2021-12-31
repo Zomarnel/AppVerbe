@@ -118,8 +118,9 @@ namespace WPFUI
                     case "DPP":
                         TPP.Focus();
                         break;
-                    default:
-                        throw new FormatException("Bruh could not find key input, gotta go bald.");
+                    case "TPP":
+                        AddVerb_OnClick(this, new RoutedEventArgs());
+                        break;
                 }
             }
         }
