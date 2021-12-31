@@ -3,11 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPFUI"
+        xmlns:viewModels="clr-namespace:AppVerbe.ViewModels;assembly=AppVerbe.ViewModels"
+        d:DataContext="{d:DesignInstance viewModels:AppSession}"
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
         Title="AddVerb" Height="450" Width="400">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolenToVisibility"/>
+    </Window.Resources>
     
     <Grid Margin="10">
 
@@ -37,13 +42,41 @@
         <Label Grid.Row="6" Grid.Column="0" Content="6." VerticalAlignment="Center"/>
         
         <!--Verbes-->
-        <TextBox Grid.Row="0" Grid.Column="1" x:Name="Name" Height="25" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="PPS" Height="25" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="DPS" Height="25" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="TPS" Height="25" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="4" Grid.Column="1" x:Name="PPP" Height="25" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="5" Grid.Column="1" x:Name="DPP" Height="25" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="6" Grid.Column="1" x:Name="TPP" Height="25" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="1"
+                 x:Name="Name"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <TextBox Grid.Row="1" Grid.Column="1"
+                 x:Name="PPS"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <TextBox Grid.Row="2" Grid.Column="1"
+                 x:Name="DPS"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <TextBox Grid.Row="3" Grid.Column="1
+                 " x:Name="TPS"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <TextBox Grid.Row="4" Grid.Column="1"
+                 x:Name="PPP"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <TextBox Grid.Row="5" Grid.Column="1"
+                 x:Name="DPP"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <TextBox Grid.Row="6" Grid.Column="1"
+                 x:Name="TPP"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 KeyDown="MoveToTheNextTextBox_KeyDown"/>
         
         <!--Buttons-->
         <Grid Grid.Row="7" Grid.ColumnSpan="2">
@@ -52,7 +85,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0"
+            <Button x:Name="AddVerb_Button"
+                    Grid.Column="0"
                     Content="Add verb to current list"
                     HorizontalAlignment="Center"
                     Click="AddVerb_OnClick"/>
