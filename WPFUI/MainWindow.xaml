@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUI"
         mc:Ignorable="d"
+        FontSize="11pt"
         Title="MainWindow" Height="500" Width="600">
     <Grid>
         <Grid.RowDefinitions>
@@ -36,6 +37,11 @@
                     Grid.Column="1"
                     HorizontalAlignment="Center" VerticalAlignment="Center"
                     Click="SaveGame_OnClick"/>
+            
+            <Button Content="Add Verb"
+                    Grid.Column="2"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Click="AddNewVerb_OnClick"/>
         </Grid>
         
         <!--Labels-->

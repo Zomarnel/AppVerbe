@@ -20,6 +20,18 @@ namespace WPFUI
         {
             SaveGame();
         }
+        private void LoadGame_OnClick(object sender, RoutedEventArgs e)
+        {
+            LoadGame();
+        }
+        private void AddNewVerb_OnClick(object sender, RoutedEventArgs e)
+        {
+            AddVerbWindow addVerbWindow = new AddVerbWindow(_appSession);
+
+            addVerbWindow.Owner = this;
+            addVerbWindow.DataContext = _appSession;
+            addVerbWindow.ShowDialog();
+        }
         private void SaveGame()
         {
             SaveFileDialog saveFileDialog =
@@ -33,10 +45,6 @@ namespace WPFUI
             {
                 SavingService.SaveList(_appSession.AppData, saveFileDialog.FileName);
             }
-        }
-        private void LoadGame_OnClick(object sender, RoutedEventArgs e)
-        {
-            LoadGame();
         }
         private void LoadGame()
         {

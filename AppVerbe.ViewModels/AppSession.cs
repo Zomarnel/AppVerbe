@@ -1,6 +1,6 @@
 ﻿using AppVerbe.Models;
-using AppVerbe.Services;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace AppVerbe.ViewModels
 {
@@ -11,7 +11,7 @@ namespace AppVerbe.ViewModels
         public AppData AppData { get; set; }
         public AppSession()
         {
-
+            AppData = new AppData("DefaultList", new List<Verbe>());
         }
     }
 }

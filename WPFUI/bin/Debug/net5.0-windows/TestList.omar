@@ -1,32 +1,32 @@
 {
-  "Name": "TestList",
+  "Name": "DefaultList",
   "Verbes": [
     {
-      "Name": "manger",
+      "Name": "marcher",
       "ConjuguatedForms": [
         {
           "Personne": 1,
-          "VerbeConjugué": "mange"
+          "VerbeConjugué": "marche"
         },
         {
           "Personne": 2,
-          "VerbeConjugué": "manges"
+          "VerbeConjugué": "marches"
         },
         {
           "Personne": 3,
-          "VerbeConjugué": "mange"
+          "VerbeConjugué": "marche"
         },
         {
           "Personne": 4,
-          "VerbeConjugué": "mangeons"
+          "VerbeConjugué": "marcheons"
         },
         {
           "Personne": 5,
-          "VerbeConjugué": "mangez"
+          "VerbeConjugué": "marchez"
         },
         {
           "Personne": 6,
-          "VerbeConjugué": "mangent"
+          "VerbeConjugué": "marchent"
         }
       ]
     },
