@@ -3,10 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPFUI"
+        xmlns:viewModels="clr-namespace:AppVerbe.ViewModels;assembly=AppVerbe.ViewModels"
+        d:DataContext="{d:DesignInstance viewModels:AppSession}"
         mc:Ignorable="d"
         FontSize="11pt"
         Title="MainWindow" Height="500" Width="600">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -26,6 +32,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Button Content="Load List"
@@ -42,12 +49,68 @@
                     Grid.Column="2"
                     HorizontalAlignment="Center" VerticalAlignment="Center"
                     Click="AddNewVerb_OnClick"/>
+            
+            <Button Content="Random Verb"
+                    Grid.Column="3"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Click="RandomVerb_OnClick"/>
+        </Grid>
+        
+        <!--Random Verb-->
+        <Grid Margin="10" Grid.Column="1" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--Personnes-->
+            <Label x:Name="lbName" Grid.Row="0" Grid.Column="0" Content="Name:" VerticalAlignment="Center" Visibility="{Binding IsCurrentVerbNull, Converter={StaticResource BooleanToVisibility}}"/>
+            <Label x:Name="lbPPS" Grid.Row="1" Grid.Column="0" Content="1." VerticalAlignment="Center" Visibility="Hidden"/>
+            <Label x:Name="lbDPS" Grid.Row="2" Grid.Column="0" Content="2." VerticalAlignment="Center" Visibility="Hidden"/>
+            <Label x:Name="lbTPS" Grid.Row="3" Grid.Column="0" Content="3." VerticalAlignment="Center" Visibility="Hidden"/>
+            <Label x:Name="lbPPP" Grid.Row="4" Grid.Column="0" Content="4." VerticalAlignment="Center" Visibility="Hidden"/>
+            <Label x:Name="lbDPP" Grid.Row="5" Grid.Column="0" Content="5." VerticalAlignment="Center" Visibility="Hidden"/>
+            <Label x:Name="lbTPP" Grid.Row="6" Grid.Column="0" Content="6." VerticalAlignment="Center" Visibility="Hidden"/>
+            
+            <!--TextBoxes-->
+            <TextBox x:Name="tbName" Grid.Row="0" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            <TextBox x:Name="tbPPS" Grid.Row="1" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            <TextBox x:Name="tbDPS" Grid.Row="2" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            <TextBox x:Name="tbTPS" Grid.Row="3" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            <TextBox x:Name="tbPPP" Grid.Row="4" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            <TextBox x:Name="tbDPP" Grid.Row="5" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            <TextBox x:Name="tbTPP" Grid.Row="6" Grid.Column="1" Height="25" VerticalAlignment="Center" Visibility="Hidden"/>
+            
+            <!--Buttons-->
+            <Grid Grid.Row="7" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                    Content="Check"
+                    />
+
+                <Button Grid.Column="1"
+                    Content="Reset"
+                    />
+            </Grid>
         </Grid>
         
         <!--Labels-->
         <Label Content="Menu" Background="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2"/>
         <Label Content="Console" Background="Beige" Grid.Row="2" Grid.Column="0"/>
-        <Label Content="Verbs" Background="BurlyWood" Grid.Column="1" Grid.Row="2"/>
-
     </Grid>
 </Window>

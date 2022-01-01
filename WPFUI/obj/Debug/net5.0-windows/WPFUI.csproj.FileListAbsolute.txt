@@ -19,7 +19,6 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFU
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI_MarkupCompile.cache
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI_MarkupCompile.lref
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.g.resources
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.GeneratedMSBuildEditorConfig.editorconfig
