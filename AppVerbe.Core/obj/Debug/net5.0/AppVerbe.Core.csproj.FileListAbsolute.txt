@@ -2,6 +2,7 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\bin\Debug\net5.0\AppV
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\bin\Debug\net5.0\AppVerbe.Core.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\bin\Debug\net5.0\ref\AppVerbe.Core.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\bin\Debug\net5.0\AppVerbe.Core.pdb
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\obj\Debug\net5.0\AppVerbe.Core.csproj.AssemblyReference.cache
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\obj\Debug\net5.0\AppVerbe.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\obj\Debug\net5.0\AppVerbe.Core.AssemblyInfoInputs.cache
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Core\obj\Debug\net5.0\AppVerbe.Core.AssemblyInfo.cs

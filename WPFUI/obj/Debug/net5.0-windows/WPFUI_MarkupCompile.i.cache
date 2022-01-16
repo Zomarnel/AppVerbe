@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\App.xaml
-2-30473817
+3-1263128227
 
-6-1273699270
+7-348405248
 199-851162168
-AddVerbWindow.xaml;MainWindow.xaml;
+AddVerbWindow.xaml;MainWindow.xaml;RandomVerbWindow.xaml;
 
-True
+False
 

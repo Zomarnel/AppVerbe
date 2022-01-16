@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System;
 using Microsoft.Win32;
+using System.Linq;
 using AppVerbe.ViewModels;
 using AppVerbe.Services;
 using AppVerbe.Models;
@@ -18,6 +19,7 @@ namespace WPFUI
             _appSession = new AppSession();
 
             DataContext = _appSession;
+
         }
         private void SaveGame_OnClick(object sender, RoutedEventArgs e)
         {
@@ -37,12 +39,17 @@ namespace WPFUI
         }
         private void RandomVerb_OnClick(object sender, RoutedEventArgs e)
         {
-            SetVisibilityToLabelsAndTextBoxes();
+            Verbe verbe = _appSession.ReturnRandomVerbe();
 
-            _appSession.ChooseRandomVerbFromList();
+            if(verbe != null)
+            {
+                RandomVerbWindow randomVerbWindow = new RandomVerbWindow(verbe);
 
-            SetVisibilityToLabelsAndTextBoxes();
+                randomVerbWindow.Owner = this;
+                randomVerbWindow.ShowDialog();
+            }
         }
+        
         private void SaveGame()
         {
             SaveFileDialog saveFileDialog =
@@ -69,68 +76,6 @@ namespace WPFUI
             if (openFileDialog.ShowDialog() == true)
             {
                 _appSession.AppData = SavingService.LoadListOrCreateNewOne(openFileDialog.FileName);
-            }
-        }
-
-        private void SetVisibilityToLabelsAndTextBoxes()
-        {
-            if(_appSession.CurrentVerb != null)
-            {
-                lbName.Visibility = Visibility.Visible;
-                tbName.Visibility = Visibility.Visible;
-
-                foreach (ConjuguatedForm conjuguatedForm in _appSession.CurrentVerb.ConjuguatedForms)
-                {
-                    switch(conjuguatedForm.Personne)
-                    {
-                        case 1:
-                            lbPPS.Visibility = Visibility.Visible;
-                            tbPPS.Visibility = Visibility.Visible;
-                            break;
-                        case 2:
-                            lbDPS.Visibility = Visibility.Visible;
-                            tbDPS.Visibility = Visibility.Visible;
-                            break;
-                        case 3:
-                            lbTPS.Visibility = Visibility.Visible;
-                            tbTPS.Visibility = Visibility.Visible;
-                            break;
-                        case 4:
-                            lbPPP.Visibility = Visibility.Visible;
-                            tbPPP.Visibility = Visibility.Visible;
-                            break;
-                        case 5:
-                            lbDPP.Visibility = Visibility.Visible;
-                            tbDPP.Visibility = Visibility.Visible;
-                            break;
-                        case 6:
-                            lbTPP.Visibility = Visibility.Visible;
-                            tbTPP.Visibility = Visibility.Visible;
-                            break;
-                    }
-                }
-            }else
-            {
-                lbName.Visibility = Visibility.Hidden;
-                tbName.Visibility = Visibility.Hidden;
-
-                lbPPS.Visibility = Visibility.Hidden;
-                tbPPS.Visibility = Visibility.Hidden;
-
-                lbDPS.Visibility = Visibility.Hidden;
-                tbDPS.Visibility = Visibility.Hidden;
-
-                lbTPS.Visibility = Visibility.Hidden;
-                tbTPS.Visibility = Visibility.Hidden;
-
-                lbPPP.Visibility = Visibility.Hidden;
-                tbPPP.Visibility = Visibility.Hidden;
-
-                lbDPP.Visibility = Visibility.Hidden;
-                tbDPP.Visibility = Visibility.Hidden;
-
-                lbTPP.Visibility = Visibility.Hidden;
-                tbTPP.Visibility = Visibility.Hidden;
             }
         }
     }
