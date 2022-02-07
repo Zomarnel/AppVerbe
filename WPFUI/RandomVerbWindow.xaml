@@ -33,13 +33,13 @@
         </Grid.ColumnDefinitions>
 
         <!--Personnes-->
-        <Label Grid.Row="0" Grid.Column="0" Content="Nom du verbe:" VerticalAlignment="Center"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="1." VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="2." VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Grid.Column="0" Content="3." VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Content="4." VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="0" Content="5." VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="0" Content="6." VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="0" Content="Verbe:" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Je" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Tu" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Il/Elle" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Nous" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Vous" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="Ils/Ellent" VerticalAlignment="Center"/>
 
         <!--Verbes-->
         <TextBox Grid.Row="0" Grid.Column="1"
@@ -79,6 +79,15 @@
                  Height="25"
                  VerticalAlignment="Center"
                  KeyDown="MoveToTheNextTextBox_KeyDown"/>
+        
+        <!-- Buttons -->
+
+        <Grid Grid.Row="7" Grid.ColumnSpan="2">
+
+            <Button Content="Confirm"
+                    Click="ValidateVerbes"/>
+            
+        </Grid>
         
     </Grid>
     

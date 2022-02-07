@@ -43,7 +43,7 @@ namespace WPFUI
 
             if(verbe != null)
             {
-                RandomVerbWindow randomVerbWindow = new RandomVerbWindow(verbe);
+                RandomVerbWindow randomVerbWindow = new RandomVerbWindow(_appSession.AppData.Verbes);
 
                 randomVerbWindow.Owner = this;
                 randomVerbWindow.ShowDialog();
