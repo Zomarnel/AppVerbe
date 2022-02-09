@@ -15,6 +15,8 @@ namespace WPFUI
 
         private List<System.Windows.Controls.TextBox> textBoxes;
 
+        private List<System.Windows.Controls.Label> labels;
+
         private Random _random = new Random();
 
         private List<Verbe> _usedVerbes = new List<Verbe>();
@@ -23,8 +25,6 @@ namespace WPFUI
             InitializeComponent();
 
             _verbes = verbes;
-
-            _verbe = _verbes[_random.Next(_verbes.Count)];
 
             textBoxes = new List<System.Windows.Controls.TextBox>
             {
@@ -35,6 +35,18 @@ namespace WPFUI
                 DPP,
                 TPP
             };
+
+            labels = new List<System.Windows.Controls.Label>
+            {
+                LBPPS,
+                LBDPS,
+                LBTPS,
+                LBPPP,
+                LBDPP,
+                LBTPP
+            };
+
+            GetNewVerb();
 
             DataContext = _verbe;
         }
@@ -83,19 +95,27 @@ namespace WPFUI
             }
         }
         private void GetNewVerb()
-        {
-            _usedVerbes.Add(_verbe);
-
-            if(_usedVerbes.Count() != _verbes.Count())
+        {   
+            if(_verbe != null)
             {
-                //_verbe = _verbes.First(vb => !_usedVerbes.Contains(vb) && _usedVerbes.Last() != vb);
+                _usedVerbes.Add(_verbe);
+            }
+
+            if (_usedVerbes.Count() != _verbes.Count())
+            {
                 _verbe = null;
 
                 while(_verbe == null)
                 {
                     Verbe verbe = _verbes[_random.Next(_verbes.Count())];
 
-                    if(!_usedVerbes.Contains(verbe) && _usedVerbes.Last() != verbe)
+                    if(_usedVerbes.Count() == 0)
+                    {
+                        _verbe = verbe;
+                        break;
+                    }
+
+                    if (!_usedVerbes.Contains(verbe) && _usedVerbes.Last() != verbe)
                     {
                         _verbe = verbe;
                     }
@@ -106,10 +126,24 @@ namespace WPFUI
             {
                 MessageBox.Show("You did it!");
 
-                this.Close();
+                Close();
             }
 
             textBoxes.ConvertAll(tb => tb.Text = "");
+
+            ChangeVisibility();
+        }
+
+        private void ChangeVisibility()
+        {
+            textBoxes.ConvertAll(tb => tb.Visibility = Visibility.Collapsed);
+            labels.ConvertAll(lb => lb.Visibility = Visibility.Collapsed);
+
+            foreach (ConjuguatedForm cf in _verbe.ConjuguatedForms)
+            {
+                textBoxes[cf.Personne - 1].Visibility = Visibility.Visible;
+                labels[cf.Personne - 1].Visibility = Visibility.Visible;
+            }
         }
     }
 }

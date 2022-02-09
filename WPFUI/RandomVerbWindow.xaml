@@ -34,12 +34,12 @@
 
         <!--Personnes-->
         <Label Grid.Row="0" Grid.Column="0" Content="Verbe:" VerticalAlignment="Center"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="Je" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="Tu" VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Grid.Column="0" Content="Il/Elle" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Content="Nous" VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="0" Content="Vous" VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="0" Content="Ils/Ellent" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Je" x:Name="LBPPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Tu" x:Name="LBDPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Il/Elle" x:Name="LBTPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Nous" x:Name="LBPPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Vous" x:Name="LBDPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="Ils/Ellent" x:Name="LBTPP" VerticalAlignment="Center"/>
 
         <!--Verbes-->
         <TextBox Grid.Row="0" Grid.Column="1"
