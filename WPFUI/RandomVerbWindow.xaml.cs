@@ -52,17 +52,47 @@ namespace WPFUI
         }
         private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Enter)
+            if(e.Key == Key.Enter || e.Key == Key.Down)
             {
-                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name) + 1;
-                if(index >= textBoxes.Count())
-                {
-                    ValidateVerbes(this, new RoutedEventArgs());
+                List<int> indexes = new List<int>();
+                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name);
 
-                    PPS.Focus();
-                }else
+                foreach (System.Windows.Controls.TextBox tb in textBoxes.Where(tb => tb.Visibility == Visibility.Visible))
                 {
-                    textBoxes[index].Focus();
+                    indexes.Add(textBoxes.IndexOf(tb));
+                }
+
+                foreach(int i in indexes)
+                {
+                    if(i > index)
+                    {
+                        textBoxes[i].Focus();
+                        return;
+                    }
+                }
+
+                ValidateVerbes(this, new RoutedEventArgs());
+
+                PPS.Focus();
+            }
+
+            if(e.Key == Key.Up)
+            {
+                List<int> indexes = new List<int>();
+                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name);
+
+                foreach (System.Windows.Controls.TextBox tb in textBoxes.Where(tb => tb.Visibility == Visibility.Visible))
+                {
+                    indexes.Add(textBoxes.IndexOf(tb));
+                }
+
+                for(int i = index-1; i >= 0; i--)
+                {
+                    if(indexes.Contains(i))
+                    {
+                        textBoxes[i].Focus();
+                        return;
+                    }
                 }
             }
         }
@@ -133,7 +163,6 @@ namespace WPFUI
 
             ChangeVisibility();
         }
-
         private void ChangeVisibility()
         {
             textBoxes.ConvertAll(tb => tb.Visibility = Visibility.Collapsed);
