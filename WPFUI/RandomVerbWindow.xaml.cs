@@ -20,6 +20,7 @@ namespace WPFUI
         private Random _random = new Random();
 
         private List<Verbe> _usedVerbes = new List<Verbe>();
+
         public RandomVerbWindow(List<Verbe> verbes)
         {
             InitializeComponent();

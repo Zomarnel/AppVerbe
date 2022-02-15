@@ -16,48 +16,66 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
         
         <!--Buttons-->
-        <Grid Background="Aquamarine" Grid.Row="1" Grid.ColumnSpan="2">
+        <Grid Grid.Row="1"
+              Background="LightGreen">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Content="Load List"
-                    Grid.Column="0"
-                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Click="LoadGame_OnClick"/>
-
-            <Button Content="Save List"
-                    Grid.Column="1"
-                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Click="SaveGame_OnClick"/>
+            <Border Grid.Row="0" Grid.Column="0"
+                    BorderThickness="1" BorderBrush="Black">
+                
+                <Button Content="Load List"
+                Grid.Column="0" Grid.Row="1"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Click="LoadGame_OnClick"/>
+                
+            </Border>
             
-            <Button Content="Add Verb"
-                    Grid.Column="2"
-                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Click="AddNewVerb_OnClick"/>
+            <Border Grid.Row="0" Grid.Column="1"
+                    BorderThickness="1" BorderBrush="Black">
+                
+                <Button Content="Save List"
+                Grid.Column="1" Grid.Row="1"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Click="SaveGame_OnClick"/>
+                
+            </Border>
             
-            <Button Content="Random Verb"
-                    Grid.Column="3"
-                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Click="RandomVerb_OnClick"/>
+            <Border Grid.Row="1" Grid.Column="0"
+                    BorderThickness="1" BorderBrush="Black">
+                
+                <Button Content="Add Verb"
+                Grid.Column="0" Grid.Row="2"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Click="AddNewVerb_OnClick"/>
+                
+            </Border>
+            
+            <Border Grid.Row="1" Grid.Column="1"
+                    BorderThickness="1" BorderBrush="Black">
+                
+                <Button Content="Random Verb"
+                Grid.Column="1" Grid.Row="2"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Click="RandomVerb_OnClick"/>
+                
+            </Border>
         </Grid>
         
         <!--Labels-->
         <Label Content="Menu" Background="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2"/>
-        <Label Content="Console" Background="Beige" Grid.Row="2" Grid.Column="0"/>
     </Grid>
 </Window>
+    
