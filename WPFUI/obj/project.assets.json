@@ -26,21 +26,10 @@
           "build/_._": {}
         }
       },
-      "AppVerbe.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/AppVerbe.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AppVerbe.Core.dll": {}
-        }
-      },
       "AppVerbe.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AppVerbe.Core": "1.0.0",
           "PropertyChanged.Fody": "3.4.0"
         },
         "compile": {
@@ -68,7 +57,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AppVerbe.Core": "1.0.0",
           "AppVerbe.Models": "1.0.0",
           "AppVerbe.Services": "1.0.0",
           "PropertyChanged.Fody": "3.4.0"
@@ -131,11 +119,6 @@
         "weaver/PropertyChanged.Fody.dll",
         "weaver/PropertyChanged.Fody.xcf"
       ]
-    },
-    "AppVerbe.Core/1.0.0": {
-      "type": "project",
-      "path": "../AppVerbe.Core/AppVerbe.Core.csproj",
-      "msbuildProject": "../AppVerbe.Core/AppVerbe.Core.csproj"
     },
     "AppVerbe.Models/1.0.0": {
       "type": "project",

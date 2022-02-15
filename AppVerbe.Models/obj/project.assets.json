@@ -22,16 +22,6 @@
         "build": {
           "build/PropertyChanged.Fody.props": {}
         }
-      },
-      "AppVerbe.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/AppVerbe.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AppVerbe.Core.dll": {}
-        }
       }
     }
   },
@@ -90,16 +80,10 @@
         "weaver/PropertyChanged.Fody.dll",
         "weaver/PropertyChanged.Fody.xcf"
       ]
-    },
-    "AppVerbe.Core/1.0.0": {
-      "type": "project",
-      "path": "../AppVerbe.Core/AppVerbe.Core.csproj",
-      "msbuildProject": "../AppVerbe.Core/AppVerbe.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "AppVerbe.Core >= 1.0.0",
       "Fody >= 6.6.0",
       "PropertyChanged.Fody >= 3.4.0"
     ]
@@ -130,11 +114,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Bouazza\\Desktop\\C#Projects\\AppVerbe\\AppVerbe.Core\\AppVerbe.Core.csproj": {
-              "projectPath": "C:\\Users\\Bouazza\\Desktop\\C#Projects\\AppVerbe\\AppVerbe.Core\\AppVerbe.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

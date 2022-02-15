@@ -37,9 +37,10 @@
                     BorderThickness="1" BorderBrush="Black">
                 
                 <Button Content="Load List"
-                Grid.Column="0" Grid.Row="1"
-                HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="LoadGame_OnClick"/>
+                        Grid.Column="0" Grid.Row="1"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Click="LoadGame_OnClick"
+                        Focusable="False"/>
                 
             </Border>
             
@@ -47,9 +48,10 @@
                     BorderThickness="1" BorderBrush="Black">
                 
                 <Button Content="Save List"
-                Grid.Column="1" Grid.Row="1"
-                HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="SaveGame_OnClick"/>
+                        Grid.Column="1" Grid.Row="1"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Click="SaveGame_OnClick"
+                        Focusable="False"/>
                 
             </Border>
             
@@ -57,9 +59,10 @@
                     BorderThickness="1" BorderBrush="Black">
                 
                 <Button Content="Add Verb"
-                Grid.Column="0" Grid.Row="2"
-                HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="AddNewVerb_OnClick"/>
+                        Grid.Column="0" Grid.Row="2"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Click="AddNewVerb_OnClick"
+                        Focusable="False"/>
                 
             </Border>
             
@@ -67,9 +70,10 @@
                     BorderThickness="1" BorderBrush="Black">
                 
                 <Button Content="Random Verb"
-                Grid.Column="1" Grid.Row="2"
-                HorizontalAlignment="Center" VerticalAlignment="Center"
-                Click="RandomVerb_OnClick"/>
+                        Grid.Column="1" Grid.Row="2"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Click="RandomVerb_OnClick"
+                        Focusable="False"/>
                 
             </Border>
         </Grid>

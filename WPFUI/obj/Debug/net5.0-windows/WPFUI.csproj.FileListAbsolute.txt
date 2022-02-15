@@ -7,13 +7,11 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\ref\
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\WPFUI.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\PropertyChanged.dll
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Core.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Models.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Services.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.ViewModels.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Models.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.ViewModels.pdb
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Core.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Services.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.csproj.AssemblyReference.cache
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\AddVerbWindow.baml

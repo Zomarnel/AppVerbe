@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System;
 using Microsoft.Win32;
-using System.Linq;
+using System.Windows.Input;
 using AppVerbe.ViewModels;
 using AppVerbe.Services;
 using AppVerbe.Models;
@@ -47,6 +47,8 @@ namespace WPFUI
 
                 randomVerbWindow.Owner = this;
                 randomVerbWindow.ShowDialog();
+
+                
             }
         }
         

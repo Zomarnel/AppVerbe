@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Collections.Generic;
 using System.Windows.Input;
@@ -10,20 +11,38 @@ namespace WPFUI
     public partial class AddVerbWindow : Window
     {
         private AppSession _appSession = new AppSession();
+
+        private List<System.Windows.Controls.TextBox> textBoxes;
         public AddVerbWindow(AppSession appSession)
         {
             InitializeComponent();
 
             _appSession = appSession;
 
+            textBoxes = new List<System.Windows.Controls.TextBox>
+            {
+                Name,
+                PPS,
+                DPS,
+                TPS,
+                PPP,
+                DPP,
+                TPP
+            };
+
             DataContext = _appSession;
         }
         private void AddVerb_OnClick(object sender, RoutedEventArgs e)
         {
-            if(CheckIfTheTextBoxesHaveAnyValue() && Name.Text != "")
+            if(textBoxes.Any(tb => tb != Name && tb.Text != "") && Name.Text != "")
             {
                 AddVerb();
-                Close();
+
+                ResetCurrentVerb_OnClick(this, new RoutedEventArgs());
+
+                Name.Focus();
+
+                MessageBox.Show("Successfully added a verb to the current list!");
             }else
             {
                 MessageBox.Show("Gotta put atleast a name and a conjuguated form, bro.");
@@ -32,97 +51,48 @@ namespace WPFUI
         }
         private void ResetCurrentVerb_OnClick(object sender, RoutedEventArgs e)
         {
-            Name.Text = "";
-            PPS.Text = "";
-            DPS.Text = "";
-            TPS.Text = "";
-            PPP.Text = "";
-            DPP.Text = "";
-            TPP.Text = "";
+            textBoxes.ConvertAll(tb => tb.Text = "");
         }
-        private bool CheckIfTheTextBoxesHaveAnyValue()
+        private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            string information = PPS.Text + DPS.Text + TPS.Text + PPP.Text + DPP.Text + TPP.Text;
-
-            if(information == "")
+            if (e.Key == Key.Enter || e.Key == Key.Down)
             {
-                return false;
+                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name)+1;
+                
+                if(index < textBoxes.Count())
+                {
+                    textBoxes[index].Focus();
+                }else
+                {
+                    AddVerb_OnClick(this, new RoutedEventArgs());
+                }
             }
 
-            return true;
+            if (e.Key == Key.Up)
+            {
+                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name)-1;
+
+                if(index >= 0)
+                {
+                    textBoxes[index].Focus();
+                }else
+                {
+                    return;
+                }
+            }
         }
         private void AddVerb()
         {
             List<ConjuguatedForm> conjuguatedForms = new List<ConjuguatedForm>();
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 1; i < 7; i++)
             {
-                switch (i)
-                {
-                    case 0:
-                        AddConjuguatedFormToCurrentList(conjuguatedForms, 1, PPS.Text);
-                        break;
-                    case 1:
-                        AddConjuguatedFormToCurrentList(conjuguatedForms, 2, DPS.Text);
-                        break;
-                    case 2:
-                        AddConjuguatedFormToCurrentList(conjuguatedForms, 3, TPS.Text);
-                        break;
-                    case 3:
-                        AddConjuguatedFormToCurrentList(conjuguatedForms, 4, PPP.Text);
-                        break;
-                    case 4:
-                        AddConjuguatedFormToCurrentList(conjuguatedForms, 5, DPP.Text);
-                        break;
-                    case 5:
-                        AddConjuguatedFormToCurrentList(conjuguatedForms, 6, TPP.Text);
-                        break;
-                    default:
-                        throw new FormatException("Could not find it bro.");
-                }
+                conjuguatedForms.Add(new ConjuguatedForm(i, textBoxes[i].Text));
             }
 
             Verbe verbe = new Verbe(Name.Text, conjuguatedForms);
 
             _appSession.AppData.Verbes.Add(verbe);
-        }
-        private void AddConjuguatedFormToCurrentList(List<ConjuguatedForm> conjuguatedForms, int personne, string text)
-        {
-            if(text != "")
-            {
-                conjuguatedForms.Add(new ConjuguatedForm(personne, text));
-            }
-        }
-
-        private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.Key == Key.Enter)
-            {
-                switch(((FrameworkElement)sender).Name)
-                {
-                    case "Name":
-                        PPS.Focus();
-                        break;
-                    case "PPS":
-                        DPS.Focus();
-                        break;
-                    case "DPS":
-                        TPS.Focus();
-                        break;
-                    case "TPS":
-                        PPP.Focus();
-                        break;
-                    case "PPP":
-                        DPP.Focus();
-                        break;
-                    case "DPP":
-                        TPP.Focus();
-                        break;
-                    case "TPP":
-                        AddVerb_OnClick(this, new RoutedEventArgs());
-                        break;
-                }
-            }
         }
     }
 }

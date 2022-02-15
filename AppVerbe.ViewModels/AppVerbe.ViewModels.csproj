@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppVerbe.Core\AppVerbe.Core.csproj" />
     <ProjectReference Include="..\AppVerbe.Models\AppVerbe.Models.csproj" />
     <ProjectReference Include="..\AppVerbe.Services\AppVerbe.Services.csproj" />
   </ItemGroup>
