@@ -13,6 +13,9 @@
     <Compile Update="RandomVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ResultsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddVerbWindow.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="RandomVerbWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResultsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

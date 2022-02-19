@@ -21,6 +21,7 @@ namespace WPFUI
 
         private List<Verbe> _usedVerbes = new List<Verbe>();
 
+        private VerbeResults FinalResults = new VerbeResults();
         public RandomVerbWindow(List<Verbe> verbes)
         {
             InitializeComponent();
@@ -116,12 +117,21 @@ namespace WPFUI
 
             if(inputs == allVerbes)
             {
+                if(!FinalResults.Results.Any(r => r.Verbe == _verbe))
+                {
+                    FinalResults.Results.Add(new VerbeResult(_verbe, true));
+                }
 
                 MessageBox.Show("Correct!");
 
                 GetNewVerb();
             }else
             {
+                if (!FinalResults.Results.Any(r => r.Verbe == _verbe))
+                {
+                    FinalResults.Results.Add(new VerbeResult(_verbe, false));
+                }
+
                 MessageBox.Show("Incorrect! Dumbass.");
             }
         }
@@ -156,6 +166,11 @@ namespace WPFUI
             }else
             {
                 MessageBox.Show("You did it!");
+
+                ResultsWindow resultsWindow = new ResultsWindow(FinalResults);
+
+                resultsWindow.Owner = this;
+                resultsWindow.ShowDialog();
 
                 Close();
             }
