@@ -117,7 +117,7 @@ namespace WPFUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPFUI;component/addverbwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPFUI;V1.0.0.0;component/addverbwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddVerbWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

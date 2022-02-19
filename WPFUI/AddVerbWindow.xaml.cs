@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Windows;
 using System.Collections.Generic;
 using System.Windows.Input;
@@ -42,12 +41,12 @@ namespace WPFUI
 
                 Name.Focus();
 
-                MessageBox.Show("Successfully added a verb to the current list!");
+                MessageBroker.CreateNewMessage(this, "Successfully added a verb to the current list!");
             }else
             {
-                MessageBox.Show("Gotta put atleast a name and a conjuguated form, bro.");
+                MessageBroker.CreateNewMessage(this, "Gotta put atleast a name and a conjuguated form, bro.");
             }
-            
+
         }
         private void ResetCurrentVerb_OnClick(object sender, RoutedEventArgs e)
         {

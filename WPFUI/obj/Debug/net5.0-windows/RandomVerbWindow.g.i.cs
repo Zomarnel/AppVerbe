@@ -157,7 +157,7 @@ namespace WPFUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPFUI;component/randomverbwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPFUI;V1.0.0.0;component/randomverbwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RandomVerbWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

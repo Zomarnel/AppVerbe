@@ -122,7 +122,7 @@ namespace WPFUI
                     FinalResults.Results.Add(new VerbeResult(_verbe, true));
                 }
 
-                MessageBox.Show("Correct!");
+                MessageBroker.CreateNewMessage(this, "Correct!");
 
                 GetNewVerb();
             }else
@@ -132,7 +132,7 @@ namespace WPFUI
                     FinalResults.Results.Add(new VerbeResult(_verbe, false));
                 }
 
-                MessageBox.Show("Incorrect! Dumbass.");
+                MessageBroker.CreateNewMessage(this, "Incorrect! Dumbass.");
             }
         }
         private void GetNewVerb()
@@ -165,7 +165,7 @@ namespace WPFUI
                 DataContext = _verbe;
             }else
             {
-                MessageBox.Show("You did it!");
+                MessageBroker.CreateNewMessage(this, "You did it!");
 
                 ResultsWindow resultsWindow = new ResultsWindow(FinalResults);
 
