@@ -7,79 +7,47 @@
         d:DataContext="{d:DesignInstance viewModels:AppSession}"
         mc:Ignorable="d"
         FontSize="11pt"
-        Title="MainWindow" Height="500" Width="600">
+        Title="MainWindow" Height="500" Width="615">
 
     <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="bdr" CornerRadius="220" Margin="5" BorderThickness="1" BorderBrush="Black" Background="#30C5FF">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bdr" Property="Background" Value="LightBlue"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
-    
     <Grid>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
+
+        <Label Content="VERBEAPP created by ME" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="DemiBold" Background="LightCoral"/>
+        <Label Content="VERBEAPP created by ME" Grid.Row="2" HorizontalContentAlignment="Center" FontWeight="DemiBold" Background="LightCoral"/>
+
+        <Border Grid.Row="1" Background="LightGoldenrodYellow"/>
         
-        <!--Buttons-->
-        <Grid Grid.Row="1"
-              Background="LightGreen">
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center">
+            <Button Content="Button 1" Click="LoadGame_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
+            <Button Content="Button 2" Click="SaveGame_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
+            <Button Content="Button 3" Click="AddNewVerb_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
+            <Button Content="Button 4" Click="RandomVerb_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
+        </StackPanel>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Border Grid.Row="0" Grid.Column="0"
-                    BorderThickness="1" BorderBrush="Black">
-                
-                <Button Content="Load List"
-                        Grid.Column="0" Grid.Row="1"
-                        HorizontalAlignment="Center" VerticalAlignment="Center"
-                        Click="LoadGame_OnClick"
-                        Focusable="False"/>
-                
-            </Border>
-            
-            <Border Grid.Row="0" Grid.Column="1"
-                    BorderThickness="1" BorderBrush="Black">
-                
-                <Button Content="Save List"
-                        Grid.Column="1" Grid.Row="1"
-                        HorizontalAlignment="Center" VerticalAlignment="Center"
-                        Click="SaveGame_OnClick"
-                        Focusable="False"/>
-                
-            </Border>
-            
-            <Border Grid.Row="1" Grid.Column="0"
-                    BorderThickness="1" BorderBrush="Black">
-                
-                <Button Content="Add Verb"
-                        Grid.Column="0" Grid.Row="2"
-                        HorizontalAlignment="Center" VerticalAlignment="Center"
-                        Click="AddNewVerb_OnClick"
-                        Focusable="False"/>
-                
-            </Border>
-            
-            <Border Grid.Row="1" Grid.Column="1"
-                    BorderThickness="1" BorderBrush="Black">
-                
-                <Button Content="Random Verb"
-                        Grid.Column="1" Grid.Row="2"
-                        HorizontalAlignment="Center" VerticalAlignment="Center"
-                        Click="RandomVerb_OnClick"
-                        Focusable="False"/>
-                
-            </Border>
-        </Grid>
-        
-        <!--Labels-->
-        <Label Content="Menu" Background="AliceBlue"  Grid.Row="0" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
     

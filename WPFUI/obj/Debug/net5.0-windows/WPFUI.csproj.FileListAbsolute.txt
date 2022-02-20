@@ -14,9 +14,7 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppV
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.ViewModels.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Services.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.csproj.AssemblyReference.cache
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\AddVerbWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\MainWindow.baml
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\AddVerbWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI_MarkupCompile.cache
@@ -30,9 +28,11 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFU
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\ref\WPFUI.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.genruntimeconfig.cache
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\RandomVerbWindow.g.cs
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\RandomVerbWindow.baml
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\ResultsWindow.g.cs
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\ResultsWindow.baml
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Message.g.cs
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Message.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\AddVerbWindow.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\Message.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\RandomVerbWindow.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\ResultsWindow.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\AddVerbWindow.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\Message.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\RandomVerbWindow.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\ResultsWindow.g.cs
