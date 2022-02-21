@@ -10,19 +10,11 @@
         Title="MainWindow" Height="500" Width="615">
 
     <Window.Resources>
-        <Style TargetType="{x:Type Button}">
+        <Style x:Key="Style1" TargetType="{x:Type Button}">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="bdr" CornerRadius="220" Margin="5" BorderThickness="1" BorderBrush="Black" Background="#30C5FF">
-                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        </Border>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="bdr" Property="Background" Value="LightBlue"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
+                        <Path Stroke="Black" Fill="AliceBlue" Data="M 300 100 V 20 100 L 200 100 C 10 10 0 0 300 15"/>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -37,17 +29,11 @@
         </Grid.RowDefinitions>
 
         <Label Content="VERBEAPP created by ME" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="DemiBold" Background="LightCoral"/>
-        <Label Content="VERBEAPP created by ME" Grid.Row="2" HorizontalContentAlignment="Center" FontWeight="DemiBold" Background="LightCoral"/>
 
         <Border Grid.Row="1" Background="LightGoldenrodYellow"/>
-        
-        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center">
-            <Button Content="Button 1" Click="LoadGame_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
-            <Button Content="Button 2" Click="SaveGame_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
-            <Button Content="Button 3" Click="AddNewVerb_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
-            <Button Content="Button 4" Click="RandomVerb_OnClick" Height="150" Width="150" VerticalAlignment="Center"/>
-        </StackPanel>
 
+        <Button Content="Please Work" Style="{StaticResource Style1}" Grid.Row="1" Click="AddNewVerb_OnClick"/>
+        
     </Grid>
 </Window>
     
