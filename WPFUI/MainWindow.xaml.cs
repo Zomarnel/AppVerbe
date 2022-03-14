@@ -5,6 +5,7 @@ using System.Windows.Input;
 using AppVerbe.ViewModels;
 using AppVerbe.Services;
 using AppVerbe.Models;
+using System.Collections.Generic;
 
 namespace WPFUI
 {
@@ -12,23 +13,29 @@ namespace WPFUI
     {
         private const string SAVE_LIST_FILE_EXTENSION = "omar";
         private AppSession _appSession;
+
         public MainWindow()
         {
             InitializeComponent();
 
             _appSession = new AppSession();
 
+           
             DataContext = _appSession;
+
+            
 
         }
         private void SaveGame_OnClick(object sender, RoutedEventArgs e)
         {
             SaveGame();
         }
+
         private void LoadGame_OnClick(object sender, RoutedEventArgs e)
         {
             LoadGame();
         }
+
         private void AddNewVerb_OnClick(object sender, RoutedEventArgs e)
         {
             AddVerbWindow addVerbWindow = new AddVerbWindow(_appSession);
@@ -37,6 +44,7 @@ namespace WPFUI
             addVerbWindow.DataContext = _appSession;
             addVerbWindow.ShowDialog();
         }
+
         private void RandomVerb_OnClick(object sender, RoutedEventArgs e)
         {
             Verbe verbe = _appSession.ReturnRandomVerbe();
