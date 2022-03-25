@@ -88,5 +88,6 @@ namespace WPFUI
                 _appSession.AppData = SavingService.LoadListOrCreateNewOne(openFileDialog.FileName);
             }
         }
+
     }
 }

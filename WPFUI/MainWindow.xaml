@@ -22,13 +22,46 @@
         <Border Grid.Row="1" Background="LightGoldenrodYellow"/>
 
         <Canvas Grid.Row="1">
-            <Button Content="TEST" Canvas.Bottom="100" Canvas.Left="250">
+            <Button Canvas.Bottom="220" Canvas.Left="207.5" Click="AddNewVerb_OnClick">
                 <Button.Template>
                     <ControlTemplate>
-                        <Path Stroke="Black" Fill="DarkGray" Data="M 0 0 L 100, 100 L 100, 50 A 100,100 0 0 1 150,100"/>
+                        <Path Stroke="Black" Fill="DarkGray" Data="M 200,100 L 100, 100 L 100, 0 A 100,100 0 0 1 200,100" />
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+
+            <TextBlock Text="TEST" Canvas.Bottom="250" Canvas.Left="335" IsHitTestVisible="False"/>
+
+            <Button Canvas.Bottom="220" Canvas.Left="107.5" Click="AddNewVerb_OnClick">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Path Stroke="Black" Fill="DarkGray" Data="M 100,100 L 200, 100 L 200, 0 A 100,100 0 0 0 100,100" />
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <TextBlock Text="TEST" Canvas.Bottom="250" Canvas.Left="245" IsHitTestVisible="False"/>
+
+            <Button Canvas.Bottom="120" Canvas.Left="107.5" Click="AddNewVerb_OnClick">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Path Stroke="Black" Fill="DarkGray" Data="M 100,100 L 200, 100 L 200, 200 A 100,100 0 0 1 100,100" />
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <TextBlock Text="TEST" Canvas.Bottom="175" Canvas.Left="245" IsHitTestVisible="False"/>
+
+            <Button Canvas.Bottom="120" Canvas.Left="207.5" Click="AddNewVerb_OnClick">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Path Stroke="Black" Fill="DarkGray" Data="M 100,100 L 100, 0 L 200, 0 A 100,100 0 0 1 100,100" />
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <TextBlock Text="TEST" Canvas.Bottom="175" Canvas.Left="335" IsHitTestVisible="False"/>
+
         </Canvas>
         
     </Grid>
