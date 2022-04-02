@@ -37,8 +37,8 @@
                 </Button.Template>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="235" Canvas.Left="335" IsHitTestVisible="False"/>
-            
+            <TextBlock Text="TEST" x:Name="TopRightTextBlock" IsHitTestVisible="False"/>
+
             <Button x:Name="MainButton" Canvas.Bottom="{Binding ElementName=MainCanvas, Path=ActualHeight, Converter={StaticResource HalfValueConverter}}">
                 <Button.Template>
                     <ControlTemplate>
@@ -51,7 +51,7 @@
                 </Canvas.Right>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="235" Canvas.Left="245" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" x:Name="TopLeftTextBlock" IsHitTestVisible="False"/>
 
             <Button x:Name="BottomLeftButton" Click="AddNewVerb_OnClick">
                 <Button.Template>
@@ -61,7 +61,7 @@
                 </Button.Template>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="160" Canvas.Left="245" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" x:Name="BottomLeftTextBlock" IsHitTestVisible="False"/>
 
             <Button x:Name="BottomRightButton" Click="AddNewVerb_OnClick">
                 <Button.Template>
@@ -71,7 +71,7 @@
                 </Button.Template>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="160" Canvas.Left="335" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" x:Name="BottomRightTextBlock" IsHitTestVisible="False"/>
 
         </Canvas>
     </Grid>
