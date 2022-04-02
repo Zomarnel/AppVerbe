@@ -4,11 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:AppVerbe.ViewModels;assembly=AppVerbe.ViewModels"
+        xmlns:local="clr-namespace:WPFUI.CustomConverters"
         d:DataContext="{d:DesignInstance viewModels:AppSession}"
         mc:Ignorable="d"
         FontSize="11pt"
-        Title="MainWindow" Height="500" Width="615">
+        Title="MainWindow" Height="500" Width="615"
+        Loaded="OnLoaded">
 
+    <Window.Resources>
+        <local:HalfValueConverter x:Key="HalfValueConverter"/>
+    </Window.Resources>
     <Grid>
 
         <Grid.RowDefinitions>
@@ -21,8 +26,10 @@
 
         <Border Grid.Row="1" Background="LightGoldenrodYellow"/>
 
-        <Canvas Grid.Row="1">
-            <Button Canvas.Bottom="220" Canvas.Left="207.5" Click="AddNewVerb_OnClick">
+        <TextBlock Grid.Row="2" x:Name="TEST" HorizontalAlignment="Center"/>
+        
+        <Canvas x:Name="MainCanvas" Grid.Row="1" SizeChanged="MainCanvas_SizeChanged" >
+            <Button x:Name="TopRightButton">
                 <Button.Template>
                     <ControlTemplate>
                         <Path Stroke="Black" Fill="DarkGray" Data="M 200,100 L 100, 100 L 100, 0 A 100,100 0 0 1 200,100" />
@@ -30,19 +37,23 @@
                 </Button.Template>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="250" Canvas.Left="335" IsHitTestVisible="False"/>
-
-            <Button Canvas.Bottom="220" Canvas.Left="107.5" Click="AddNewVerb_OnClick">
+            <TextBlock Text="TEST" Canvas.Bottom="235" Canvas.Left="335" IsHitTestVisible="False"/>
+            
+            <Button x:Name="MainButton" Canvas.Bottom="{Binding ElementName=MainCanvas, Path=ActualHeight, Converter={StaticResource HalfValueConverter}}">
                 <Button.Template>
                     <ControlTemplate>
                         <Path Stroke="Black" Fill="DarkGray" Data="M 100,100 L 200, 100 L 200, 0 A 100,100 0 0 0 100,100" />
                     </ControlTemplate>
                 </Button.Template>
+
+                <Canvas.Right>
+                    <Binding ElementName="MainCanvas" Path="ActualWidth" Converter="{StaticResource HalfValueConverter}"/>
+                </Canvas.Right>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="250" Canvas.Left="245" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" Canvas.Bottom="235" Canvas.Left="245" IsHitTestVisible="False"/>
 
-            <Button Canvas.Bottom="120" Canvas.Left="107.5" Click="AddNewVerb_OnClick">
+            <Button x:Name="BottomLeftButton" Click="AddNewVerb_OnClick">
                 <Button.Template>
                     <ControlTemplate>
                         <Path Stroke="Black" Fill="DarkGray" Data="M 100,100 L 200, 100 L 200, 200 A 100,100 0 0 1 100,100" />
@@ -50,9 +61,9 @@
                 </Button.Template>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="175" Canvas.Left="245" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" Canvas.Bottom="160" Canvas.Left="245" IsHitTestVisible="False"/>
 
-            <Button Canvas.Bottom="120" Canvas.Left="207.5" Click="AddNewVerb_OnClick">
+            <Button x:Name="BottomRightButton" Click="AddNewVerb_OnClick">
                 <Button.Template>
                     <ControlTemplate>
                         <Path Stroke="Black" Fill="DarkGray" Data="M 100,100 L 100, 0 L 200, 0 A 100,100 0 0 1 100,100" />
@@ -60,10 +71,9 @@
                 </Button.Template>
             </Button>
 
-            <TextBlock Text="TEST" Canvas.Bottom="175" Canvas.Left="335" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" Canvas.Bottom="160" Canvas.Left="335" IsHitTestVisible="False"/>
 
         </Canvas>
-        
     </Grid>
 </Window>
     

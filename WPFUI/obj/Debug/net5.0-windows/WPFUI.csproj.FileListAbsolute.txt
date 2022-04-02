@@ -36,3 +36,5 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Wind
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\Message.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\RandomVerbWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\ResultsWindow.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI_MarkupCompile.lref
