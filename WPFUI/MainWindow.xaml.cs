@@ -13,10 +13,7 @@ namespace WPFUI
         private const string SAVE_LIST_FILE_EXTENSION = "omar";
         private AppSession _appSession;
 
-        private PositionOnCanvas Position_TopRightTextBlock = new PositionOnCanvas();
-        private PositionOnCanvas Position_TopLeftTextBlock = new PositionOnCanvas();
-        private PositionOnCanvas Position_BottomRightTextBlock = new PositionOnCanvas();
-        private PositionOnCanvas Position_BottomLeftTextBlock = new PositionOnCanvas();
+        private double WIDTH_HEIGHT = 150; 
 
         public MainWindow()
         {
@@ -120,18 +117,18 @@ namespace WPFUI
                 switch (((Button)element).Name)
                 {
                     case "TopRightButton":
-                        Canvas.SetRight(element, Canvas.GetRight(MainButton) - 100);
+                        Canvas.SetRight(element, Canvas.GetRight(MainButton) - WIDTH_HEIGHT);
                         Canvas.SetBottom(element, Canvas.GetBottom(MainButton));
                         break;
 
                     case "BottomRightButton":
-                        Canvas.SetRight(element, Canvas.GetRight(MainButton) - 100);
-                        Canvas.SetBottom(element, Canvas.GetBottom(MainButton) - 100);
+                        Canvas.SetRight(element, Canvas.GetRight(MainButton) - WIDTH_HEIGHT);
+                        Canvas.SetBottom(element, Canvas.GetBottom(MainButton) - WIDTH_HEIGHT);
                         break;
 
                     case "BottomLeftButton":
                         Canvas.SetRight(element, Canvas.GetRight(MainButton));
-                        Canvas.SetBottom(element, Canvas.GetBottom(MainButton) - 100);
+                        Canvas.SetBottom(element, Canvas.GetBottom(MainButton) - WIDTH_HEIGHT);
                         break;
                 }
             }
@@ -140,23 +137,21 @@ namespace WPFUI
         private void ResizeTextBlocks()
         {
 
-            double width = TopRightButton.ActualHeight;
-
             //Top right buttons and textblocks
-            Canvas.SetRight(TopRightTextBlock, Canvas.GetRight(TopRightButton) + (TopRightButton.ActualWidth/2 - TopRightTextBlock.ActualWidth) / 2);
-            Canvas.SetBottom(TopRightTextBlock, Canvas.GetBottom(TopRightButton) + (TopRightButton.ActualHeight - TopRightTextBlock.ActualHeight) / 2);
+            Canvas.SetRight(TopRightTextBlock, Canvas.GetRight(TopRightButton) + (WIDTH_HEIGHT - TopRightTextBlock.ActualWidth) / 2);
+            Canvas.SetBottom(TopRightTextBlock, Canvas.GetBottom(TopRightButton) + (WIDTH_HEIGHT - TopRightTextBlock.ActualHeight) / 2);
 
             //Top left buttons and textblocks
-            Canvas.SetRight(TopLeftTextBlock, Canvas.GetRight(MainButton) + (MainButton.ActualWidth / 2 - TopLeftTextBlock.ActualWidth) / 2);
-            Canvas.SetBottom(TopLeftTextBlock, Canvas.GetBottom(MainButton) + (MainButton.ActualHeight - TopLeftTextBlock.ActualHeight) / 2);
+            Canvas.SetRight(TopLeftTextBlock, Canvas.GetRight(MainButton) + (WIDTH_HEIGHT - TopLeftTextBlock.ActualWidth) / 2);
+            Canvas.SetBottom(TopLeftTextBlock, Canvas.GetBottom(MainButton) + (WIDTH_HEIGHT - TopLeftTextBlock.ActualHeight) / 2);
 
             //Bottom right buttons and textblocks
-            Canvas.SetRight(BottomRightTextBlock, Canvas.GetRight(BottomRightButton) + (BottomRightButton.ActualWidth / 2 - BottomRightTextBlock.ActualWidth) / 2);
-            Canvas.SetBottom(BottomRightTextBlock, Canvas.GetBottom(BottomRightButton) + (BottomRightButton.ActualHeight - BottomRightTextBlock.ActualHeight) / 2);
+            Canvas.SetRight(BottomRightTextBlock, Canvas.GetRight(BottomRightButton) + (WIDTH_HEIGHT - BottomRightTextBlock.ActualWidth) / 2);
+            Canvas.SetBottom(BottomRightTextBlock, Canvas.GetBottom(BottomRightButton) + (WIDTH_HEIGHT - BottomRightTextBlock.ActualHeight) / 2);
 
             //Bottom left buttons and textblocks
-            Canvas.SetRight(BottomLeftTextBlock, Canvas.GetRight(BottomLeftButton) + (BottomLeftButton.ActualWidth / 2 - BottomLeftTextBlock.ActualWidth) / 2);
-            Canvas.SetBottom(BottomLeftTextBlock, Canvas.GetBottom(BottomLeftButton) + (BottomLeftButton.ActualHeight/2 - BottomLeftTextBlock.ActualHeight) / 2);
+            Canvas.SetRight(BottomLeftTextBlock, Canvas.GetRight(BottomLeftButton) + (WIDTH_HEIGHT - BottomLeftTextBlock.ActualWidth) / 2);
+            Canvas.SetBottom(BottomLeftTextBlock, Canvas.GetBottom(BottomLeftButton) + (WIDTH_HEIGHT - BottomLeftTextBlock.ActualHeight) / 2);
 
         }
         #endregion
