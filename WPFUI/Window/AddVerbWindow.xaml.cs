@@ -12,6 +12,7 @@ namespace WPFUI
         private AppSession _appSession = new AppSession();
 
         private List<System.Windows.Controls.TextBox> textBoxes;
+
         public AddVerbWindow(AppSession appSession)
         {
             InitializeComponent();
@@ -31,9 +32,10 @@ namespace WPFUI
 
             DataContext = _appSession;
         }
+
         private void AddVerb_OnClick(object sender, RoutedEventArgs e)
         {
-            if(textBoxes.Any(tb => tb != Name && tb.Text != "") && Name.Text != "")
+            if(ValidateVerb())
             {
                 AddVerb();
 
@@ -42,16 +44,13 @@ namespace WPFUI
                 Name.Focus();
 
                 MessageBroker.CreateNewMessage(this, "Successfully added a verb to the current list!");
-            }else
-            {
-                MessageBroker.CreateNewMessage(this, "Gotta put atleast a name and a conjuguated form, bro.");
             }
-
         }
         private void ResetCurrentVerb_OnClick(object sender, RoutedEventArgs e)
         {
             textBoxes.ConvertAll(tb => tb.Text = "");
         }
+
         private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter || e.Key == Key.Down)
@@ -80,7 +79,15 @@ namespace WPFUI
                 }
             }
         }
+
         private void AddVerb()
+        {
+            Verbe verbe = BuildVerb();
+
+            _appSession.AppData.Verbes.Add(verbe);
+        }
+
+        private Verbe BuildVerb()
         {
             List<ConjuguatedForm> conjuguatedForms = new List<ConjuguatedForm>();
 
@@ -89,9 +96,32 @@ namespace WPFUI
                 conjuguatedForms.Add(new ConjuguatedForm(i, textBoxes[i].Text));
             }
 
-            Verbe verbe = new Verbe(Name.Text, conjuguatedForms);
+            return new Verbe(Name.Text, conjuguatedForms);
+        }
 
-            _appSession.AppData.Verbes.Add(verbe);
+        private bool ValidateVerb()
+        {
+            Verbe verbe = BuildVerb();
+
+            if(Name.Text == "")
+            {
+                MessageBroker.CreateNewMessage(this, "Missing name.");
+                return false;
+            }
+
+            if(!textBoxes.Any(tb => tb != Name && tb.Text != ""))
+            {
+                MessageBroker.CreateNewMessage(this, "Missing conjuguated form.");
+                return false;
+            }
+
+            if(_appSession.AppData.CheckIfVerbeInsideList(verbe))
+            {
+                MessageBroker.CreateNewMessage(this, "Verb already existing in current list.");
+                return false;
+            }
+
+            return true;
         }
     }
 }
