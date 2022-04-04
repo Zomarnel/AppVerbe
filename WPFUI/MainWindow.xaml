@@ -8,12 +8,13 @@
         d:DataContext="{d:DesignInstance viewModels:AppSession}"
         mc:Ignorable="d"
         FontSize="11pt"
-        Title="MainWindow" Height="500" Width="615"
+        Title="VERBEAPP" Height="500" Width="615"
         Loaded="OnLoaded">
 
     <Window.Resources>
         <local:HalfValueConverter x:Key="HalfValueConverter"/>
     </Window.Resources>
+
     <Grid>
 
         <Grid.RowDefinitions>
@@ -22,11 +23,11 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <Label Content="TEST" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="DemiBold" Background="LightCoral"/>
-
-        <Border Grid.Row="1" Background="LightGoldenrodYellow"/>
-
-        <TextBlock Grid.Row="2" x:Name="TEST" HorizontalAlignment="Center"/>
+        <Border Grid.Row="0" BorderBrush="Black" Background="LightCoral"/>
+                             
+        <Border Grid.Row="2" BorderBrush="Black" Background="LightCoral"/>
+                             
+        <Border Grid.Row="1" BorderBrush="Black" Background="LightGoldenrodYellow"/>
         
         <Canvas x:Name="MainCanvas" Grid.Row="1" SizeChanged="MainCanvas_SizeChanged" >
             
