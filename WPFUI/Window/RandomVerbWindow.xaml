@@ -14,7 +14,7 @@
         <BooleanToVisibilityConverter x:Key="BoolenToVisibility"/>
     </Window.Resources>
     
-    <Grid Margin="10">
+    <Grid>
         
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -31,49 +31,53 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
+        
         <!-- Labels -->
-        <Label Grid.Row="0" Grid.Column="0" Content="Verbe:" VerticalAlignment="Center"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="Je" x:Name="LBPPS" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="Tu" x:Name="LBDPS" VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Grid.Column="0" Content="Il/Elle" x:Name="LBTPS" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Content="Nous" x:Name="LBPPP" VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="0" Content="Vous" x:Name="LBDPP" VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="0" Content="Ils/Ellent" x:Name="LBTPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.ColumnSpan="2"
+               Background="PaleGoldenrod"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+               Content="{Binding Name}" FontWeight="Bold" FontSize="20"/>
+
+        <Label Grid.Row="1" Margin="10" Grid.Column="0" Content="Je" x:Name="LBPPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Margin="10" Grid.Column="0" Content="Tu" x:Name="LBDPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Margin="10" Grid.Column="0" Content="Il/Elle" x:Name="LBTPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Margin="10" Grid.Column="0" Content="Nous" x:Name="LBPPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Margin="10" Grid.Column="0" Content="Vous" x:Name="LBDPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Margin="10" Grid.Column="0" Content="Ils/Ellent" x:Name="LBTPP" VerticalAlignment="Center"/>
 
         <!--#region TextBoxes-->
-        <TextBox Grid.Row="0" Grid.Column="1"
-                 x:Name="Name"
-                 IsReadOnly="True"
-                 Text="{Binding Name}"
-                 Height="25"
-                 VerticalAlignment="Center"/>
         <TextBox Grid.Row="1" Grid.Column="1"
+                 Margin="0, 0, 10, 0"
                  x:Name="PPS"
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="2" Grid.Column="1"
+                 Margin="0, 0, 10, 0"
                  x:Name="DPS"
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
-        <TextBox Grid.Row="3" Grid.Column="1
-                 " x:Name="TPS"
+        <TextBox Grid.Row="3" Grid.Column="1"
+                 Margin="0, 0, 10, 0"
+                 x:Name="TPS"
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="4" Grid.Column="1"
+                 Margin="0, 0, 10, 0"
                  x:Name="PPP"
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="5" Grid.Column="1"
+                 Margin="0, 0, 10, 0"
                  x:Name="DPP"
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="6" Grid.Column="1"
+                 Margin="0, 0, 10, 0"
                  x:Name="TPP"
                  Height="25"
                  VerticalAlignment="Center"

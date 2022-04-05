@@ -9,6 +9,7 @@ namespace WPFUI
 {
     public partial class RandomVerbWindow : Window
     {
+        #region Properties
         private Verbe _verbe;
 
         private List<Verbe> _verbes;
@@ -18,6 +19,8 @@ namespace WPFUI
         private List<System.Windows.Controls.TextBox> textBoxes;
 
         private List<System.Windows.Controls.Label> labels;
+
+        #endregion Properties
 
         public RandomVerbWindow(List<Verbe> verbes)
         {
@@ -51,6 +54,7 @@ namespace WPFUI
 
             textBoxes.First(tb => tb.Visibility == Visibility.Visible).Focus();
         }
+
         private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             List<int> indexes = new List<int>();
