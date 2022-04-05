@@ -93,7 +93,7 @@
             
             <TextBlock Text="SAVE LIST" FontWeight="Bold" x:Name="TopRightTextBlock" IsHitTestVisible="False"/>
 
-            <TextBlock Text="RANDOM VERB" FontWeight="Bold" x:Name="BottomRightTextBlock" IsHitTestVisible="False"/>
+            <TextBlock Text="TEST" FontWeight="Bold" x:Name="BottomRightTextBlock" IsHitTestVisible="False"/>
             
             <TextBlock Text="ADD VERB" FontWeight="Bold" x:Name="BottomLeftTextBlock" IsHitTestVisible="False"/>
             

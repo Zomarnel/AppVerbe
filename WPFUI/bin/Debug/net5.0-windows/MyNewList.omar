@@ -58,6 +58,35 @@
           "VerbeConjugué": "mangent"
         }
       ]
+    },
+    {
+      "Name": "être",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "suis"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "es"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "est"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "sommes"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "êtes"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "sont"
+        }
+      ]
     }
   ]
 }

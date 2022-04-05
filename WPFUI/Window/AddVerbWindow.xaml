@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
-        Title="AddVerb" Height="450" Width="400">
+        Title="ADD VERB" Height="450" Width="400">
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolenToVisibility"/>

@@ -21,7 +21,8 @@ namespace WPFUI
 
         private List<Verbe> _usedVerbes = new List<Verbe>();
 
-        private VerbeResults FinalResults = new VerbeResults();
+        private VerbeResults _finalResults = new VerbeResults();
+
         public RandomVerbWindow(List<Verbe> verbes)
         {
             InitializeComponent();
@@ -54,16 +55,20 @@ namespace WPFUI
         }
         private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Enter || e.Key == Key.Down)
+            List<int> indexes = new List<int>();
+
+            // Find index of the textbox sender
+            int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name);
+
+            // Find all indexes of visible textboxes
+            foreach (System.Windows.Controls.TextBox tb in textBoxes.Where(tb => tb.Visibility == Visibility.Visible))
             {
-                List<int> indexes = new List<int>();
-                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name);
+                indexes.Add(textBoxes.IndexOf(tb));
+            }
 
-                foreach (System.Windows.Controls.TextBox tb in textBoxes.Where(tb => tb.Visibility == Visibility.Visible))
-                {
-                    indexes.Add(textBoxes.IndexOf(tb));
-                }
-
+            if (e.Key == Key.Enter || e.Key == Key.Down)
+            {
+                // Iterations through the indexes in search of a greater index than the sender
                 foreach(int i in indexes)
                 {
                     if(i > index)
@@ -73,6 +78,7 @@ namespace WPFUI
                     }
                 }
 
+                // If no greater value than validate
                 ValidateVerbes(this, new RoutedEventArgs());
 
                 PPS.Focus();
@@ -80,14 +86,6 @@ namespace WPFUI
 
             if(e.Key == Key.Up)
             {
-                List<int> indexes = new List<int>();
-                int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name);
-
-                foreach (System.Windows.Controls.TextBox tb in textBoxes.Where(tb => tb.Visibility == Visibility.Visible))
-                {
-                    indexes.Add(textBoxes.IndexOf(tb));
-                }
-
                 for(int i = index-1; i >= 0; i--)
                 {
                     if(indexes.Contains(i))
@@ -98,46 +96,34 @@ namespace WPFUI
                 }
             }
         }
+
         private void ValidateVerbes(object sender, RoutedEventArgs e)
         {
-
-            string inputs = "";
-
-            string allVerbes = "";
-
-            foreach (System.Windows.Controls.TextBox tb in textBoxes)
+            if (_verbe.ConjuguatedForms.All(cf => cf.VerbeConjugué == textBoxes[cf.Personne - 1].Text))
             {
-                inputs += tb.Text;
-            }
-
-            foreach(ConjuguatedForm cf in _verbe.ConjuguatedForms)
-            {
-                allVerbes += cf.VerbeConjugué;
-            }
-
-            if(inputs == allVerbes)
-            {
-                if(!FinalResults.Results.Any(r => r.Verbe == _verbe))
+                if (!_finalResults.Results.Any(r => r.Verbe == _verbe))
                 {
-                    FinalResults.Results.Add(new VerbeResult(_verbe, true));
+                    _finalResults.Results.Add(new VerbeResult(_verbe, true));
                 }
 
                 MessageBroker.CreateNewMessage(this, "Correct!");
 
                 GetNewVerb();
-            }else
+            }
+            else
             {
-                if (!FinalResults.Results.Any(r => r.Verbe == _verbe))
+                if (!_finalResults.Results.Any(r => r.Verbe == _verbe))
                 {
-                    FinalResults.Results.Add(new VerbeResult(_verbe, false));
+                    _finalResults.Results.Add(new VerbeResult(_verbe, false));
                 }
 
                 MessageBroker.CreateNewMessage(this, "Incorrect! Dumbass.");
             }
         }
+
         private void GetNewVerb()
         {   
-            if(_verbe != null)
+            /*if(_verbe != null)
             {
                 _usedVerbes.Add(_verbe);
             }
@@ -167,7 +153,33 @@ namespace WPFUI
             {
                 MessageBroker.CreateNewMessage(this, "You did it!");
 
-                ResultsWindow resultsWindow = new ResultsWindow(FinalResults);
+                ResultsWindow resultsWindow = new ResultsWindow(_finalResults);
+
+                resultsWindow.Owner = this;
+                resultsWindow.ShowDialog();
+
+                Close();
+            }
+
+            textBoxes.ConvertAll(tb => tb.Text = "");
+
+            ChangeVisibility();*/
+
+            if(_verbe != null)
+            {
+                _verbes.Remove(_verbe);
+            }
+
+            if (_verbes.Any())
+            {
+                _verbe = _verbes[_random.Next(_verbes.Count())];
+
+                DataContext = _verbe;
+            }else
+            {
+                MessageBroker.CreateNewMessage(this, "You did it!");
+
+                ResultsWindow resultsWindow = new ResultsWindow(_finalResults);
 
                 resultsWindow.Owner = this;
                 resultsWindow.ShowDialog();

@@ -33,5 +33,10 @@ namespace AppVerbe.Models
 
             return false;
         }
+
+        public List<Verbe> CloneVerbs()
+        {
+            return new List<Verbe>(Verbes);
+        }
     }
 }

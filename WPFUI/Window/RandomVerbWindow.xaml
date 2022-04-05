@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
-        Title="RandomVerb" Height="450" Width="400">
+        Title="TEST" Height="450" Width="400">
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolenToVisibility"/>

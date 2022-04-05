@@ -33,6 +33,8 @@ namespace WPFUI
             DataContext = _appSession;
         }
 
+        #region Events
+
         private void AddVerb_OnClick(object sender, RoutedEventArgs e)
         {
             if(ValidateVerb())
@@ -46,6 +48,7 @@ namespace WPFUI
                 MessageBroker.CreateNewMessage(this, "Successfully added a verb to the current list!");
             }
         }
+
         private void ResetCurrentVerb_OnClick(object sender, RoutedEventArgs e)
         {
             textBoxes.ConvertAll(tb => tb.Text = "");
@@ -80,6 +83,9 @@ namespace WPFUI
             }
         }
 
+        #endregion Events
+
+        #region Functions
         private void AddVerb()
         {
             Verbe verbe = BuildVerb();
@@ -123,5 +129,7 @@ namespace WPFUI
 
             return true;
         }
+
+        #endregion Functions
     }
 }
