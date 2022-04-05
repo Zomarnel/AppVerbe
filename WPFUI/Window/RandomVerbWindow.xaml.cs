@@ -48,6 +48,8 @@ namespace WPFUI
             GetNewVerb();
 
             DataContext = _verbe;
+
+            textBoxes.First(tb => tb.Visibility == Visibility.Visible).Focus();
         }
         private void MoveToTheNextTextBox_KeyDown(object sender, KeyEventArgs e)
         {

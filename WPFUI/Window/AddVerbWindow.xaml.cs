@@ -99,7 +99,10 @@ namespace WPFUI
 
             for (int i = 1; i < 7; i++)
             {
-                conjuguatedForms.Add(new ConjuguatedForm(i, textBoxes[i].Text));
+                if(textBoxes[i].Text != "")
+                {
+                    conjuguatedForms.Add(new ConjuguatedForm(i, textBoxes[i].Text));
+                }
             }
 
             return new Verbe(Name.Text, conjuguatedForms);
