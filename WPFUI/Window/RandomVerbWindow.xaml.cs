@@ -13,15 +13,11 @@ namespace WPFUI
 
         private List<Verbe> _verbes;
 
+        private VerbeResults _finalResults = new VerbeResults();
+
         private List<System.Windows.Controls.TextBox> textBoxes;
 
         private List<System.Windows.Controls.Label> labels;
-
-        private Random _random = new Random();
-
-        private List<Verbe> _usedVerbes = new List<Verbe>();
-
-        private VerbeResults _finalResults = new VerbeResults();
 
         public RandomVerbWindow(List<Verbe> verbes)
         {
@@ -122,48 +118,8 @@ namespace WPFUI
         }
 
         private void GetNewVerb()
-        {   
-            /*if(_verbe != null)
-            {
-                _usedVerbes.Add(_verbe);
-            }
-
-            if (_usedVerbes.Count() != _verbes.Count())
-            {
-                _verbe = null;
-
-                while(_verbe == null)
-                {
-                    Verbe verbe = _verbes[_random.Next(_verbes.Count())];
-
-                    if(_usedVerbes.Count() == 0)
-                    {
-                        _verbe = verbe;
-                        break;
-                    }
-
-                    if (!_usedVerbes.Contains(verbe) && _usedVerbes.Last() != verbe)
-                    {
-                        _verbe = verbe;
-                    }
-                } 
-
-                DataContext = _verbe;
-            }else
-            {
-                MessageBroker.CreateNewMessage(this, "You did it!");
-
-                ResultsWindow resultsWindow = new ResultsWindow(_finalResults);
-
-                resultsWindow.Owner = this;
-                resultsWindow.ShowDialog();
-
-                Close();
-            }
-
-            textBoxes.ConvertAll(tb => tb.Text = "");
-
-            ChangeVisibility();*/
+        {
+            Random random = new Random();
 
             if(_verbe != null)
             {
@@ -172,7 +128,7 @@ namespace WPFUI
 
             if (_verbes.Any())
             {
-                _verbe = _verbes[_random.Next(_verbes.Count())];
+                _verbe = _verbes[random.Next(_verbes.Count())];
 
                 DataContext = _verbe;
             }else
@@ -191,6 +147,7 @@ namespace WPFUI
 
             ChangeVisibility();
         }
+
         private void ChangeVisibility()
         {
             textBoxes.ConvertAll(tb => tb.Visibility = Visibility.Collapsed);

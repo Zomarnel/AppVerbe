@@ -32,7 +32,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!--Personnes-->
+        <!-- Labels -->
         <Label Grid.Row="0" Grid.Column="0" Content="Nom du verbe:" VerticalAlignment="Center"/>
         <Label Grid.Row="1" Grid.Column="0" Content="Je" VerticalAlignment="Center"/>
         <Label Grid.Row="2" Grid.Column="0" Content="Tu" VerticalAlignment="Center"/>
@@ -41,7 +41,7 @@
         <Label Grid.Row="5" Grid.Column="0" Content="Vous" VerticalAlignment="Center"/>
         <Label Grid.Row="6" Grid.Column="0" Content="Ils/Elles" VerticalAlignment="Center"/>
         
-        <!--Verbes-->
+        <!--#region TextBoxes-->
         <TextBox Grid.Row="0" Grid.Column="1"
                  x:Name="Name"
                  Height="25"
@@ -77,6 +77,7 @@
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <!--#endregion TextBoxes--> 
         
         <!--Buttons-->
         <Grid Grid.Row="7" Grid.ColumnSpan="2">

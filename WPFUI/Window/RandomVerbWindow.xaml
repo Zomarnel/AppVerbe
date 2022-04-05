@@ -32,7 +32,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!--Personnes-->
+        <!-- Labels -->
         <Label Grid.Row="0" Grid.Column="0" Content="Verbe:" VerticalAlignment="Center"/>
         <Label Grid.Row="1" Grid.Column="0" Content="Je" x:Name="LBPPS" VerticalAlignment="Center"/>
         <Label Grid.Row="2" Grid.Column="0" Content="Tu" x:Name="LBDPS" VerticalAlignment="Center"/>
@@ -41,7 +41,7 @@
         <Label Grid.Row="5" Grid.Column="0" Content="Vous" x:Name="LBDPP" VerticalAlignment="Center"/>
         <Label Grid.Row="6" Grid.Column="0" Content="Ils/Ellent" x:Name="LBTPP" VerticalAlignment="Center"/>
 
-        <!--Verbes-->
+        <!--#region TextBoxes-->
         <TextBox Grid.Row="0" Grid.Column="1"
                  x:Name="Name"
                  IsReadOnly="True"
@@ -78,14 +78,12 @@
                  Height="25"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
+        <!--#endregion TextBoxes-->
         
         <!-- Buttons -->
-
         <Grid Grid.Row="7" Grid.ColumnSpan="2">
-
             <Button Content="Confirm"
                     Click="ValidateVerbes"/>
-            
         </Grid>
         
     </Grid>
