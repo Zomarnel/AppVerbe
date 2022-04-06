@@ -108,8 +108,6 @@ namespace WPFUI
                     _finalResults.Results.Add(new VerbeResult(_verbe, true));
                 }
 
-                MessageBroker.CreateNewMessage(this, "Correct!");
-
                 GetNewVerb();
             }
             else
@@ -119,7 +117,7 @@ namespace WPFUI
                     _finalResults.Results.Add(new VerbeResult(_verbe, false));
                 }
 
-                MessageBroker.CreateNewMessage(this, "Incorrect! Dumbass.");
+                GetNewVerb();
             }
         }
 
