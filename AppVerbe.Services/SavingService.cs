@@ -41,6 +41,7 @@ namespace AppVerbe.Services
                 }
 
                 verbes.Add(new Verbe((string)verbToken[nameof(Verbe.Name)],
+                                     (string)verbToken[nameof(Verbe.Temps)],
                                      conjuguatedForms));
             }
 

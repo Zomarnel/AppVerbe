@@ -32,8 +32,43 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Nom du verbe" VerticalAlignment="Center"/>
+
+                <TextBox Grid.Column="1"
+                 x:Name="Name"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="11">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Temps" VerticalAlignment="Center"/>
+
+                <TextBox Grid.Column="1"
+                 x:Name="Temps"
+                 Height="25"
+                 VerticalAlignment="Center"
+                 PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
+            </Grid>
+        </Grid>
         <!-- Labels -->
-        <Label Grid.Row="0" Grid.Column="0" Content="Nom du verbe:" VerticalAlignment="Center"/>
         <Label Grid.Row="1" Grid.Column="0" Content="Je" VerticalAlignment="Center"/>
         <Label Grid.Row="2" Grid.Column="0" Content="Tu" VerticalAlignment="Center"/>
         <Label Grid.Row="3" Grid.Column="0" Content="Il/Elle" VerticalAlignment="Center"/>
@@ -42,11 +77,6 @@
         <Label Grid.Row="6" Grid.Column="0" Content="Ils/Elles" VerticalAlignment="Center"/>
         
         <!--#region TextBoxes-->
-        <TextBox Grid.Row="0" Grid.Column="1"
-                 x:Name="Name"
-                 Height="25"
-                 VerticalAlignment="Center"
-                 PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="1" Grid.Column="1"
                  x:Name="PPS"
                  Height="25"

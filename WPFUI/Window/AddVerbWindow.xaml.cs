@@ -22,6 +22,7 @@ namespace WPFUI
             textBoxes = new List<System.Windows.Controls.TextBox>
             {
                 Name,
+                Temps,
                 PPS,
                 DPS,
                 TPS,
@@ -97,15 +98,16 @@ namespace WPFUI
         {
             List<ConjuguatedForm> conjuguatedForms = new List<ConjuguatedForm>();
 
-            for (int i = 1; i < 7; i++)
+            for (int i = 2; i <= 7; i++)
             {
+
                 if(textBoxes[i].Text != "")
                 {
-                    conjuguatedForms.Add(new ConjuguatedForm(i, textBoxes[i].Text));
+                    conjuguatedForms.Add(new ConjuguatedForm(i-1, textBoxes[i].Text));
                 }
             }
 
-            return new Verbe(Name.Text, conjuguatedForms);
+            return new Verbe(Name.Text, Temps.Text, conjuguatedForms);
         }
 
         private bool ValidateVerb()
@@ -118,7 +120,13 @@ namespace WPFUI
                 return false;
             }
 
-            if(!textBoxes.Any(tb => tb != Name && tb.Text != ""))
+            if (Temps.Text == "")
+            {
+                MessageBroker.CreateNewMessage(this, "Missing temps");
+                return false;
+            }
+
+            if (!textBoxes.Any(tb => tb != Name && tb.Text != "" && tb != Temps))
             {
                 MessageBroker.CreateNewMessage(this, "Missing conjuguated form.");
                 return false;

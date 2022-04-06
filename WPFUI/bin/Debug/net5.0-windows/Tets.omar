@@ -1,0 +1,35 @@
+{
+  "Name": "DefaultList",
+  "Verbes": [
+    {
+      "Name": "e",
+      "Temps": "e",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "e"
+        }
+      ]
+    },
+    {
+      "Name": "e",
+      "Temps": "e",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "e"
+        }
+      ]
+    },
+    {
+      "Name": "e",
+      "Temps": "e",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "e"
+        }
+      ]
+    }
+  ]
+}

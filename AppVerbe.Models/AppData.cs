@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace AppVerbe.Models
 {
@@ -16,16 +17,11 @@ namespace AppVerbe.Models
 
         public bool CheckIfVerbeInsideList(Verbe verbe)
         {
-            string forms1 = "";
-            verbe.ConjuguatedForms.ForEach(cf => forms1 += cf.VerbeConjugué);
 
             foreach (Verbe item in Verbes)
             {
-                string forms = "";
 
-                item.ConjuguatedForms.ForEach(cf => forms += cf.VerbeConjugué);
-
-                if(forms == forms1 && verbe.Name == item.Name)
+                if (verbe.Name == item.Name && verbe.Temps == item.Temps)
                 {
                     return true;
                 }
