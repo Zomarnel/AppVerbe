@@ -29,7 +29,14 @@
                                     IsReadOnly="True"
                                     Width="*"
                                     Binding="{Binding Verbe.Name}">
- 
+
+                </DataGridTextColumn>
+                
+                <DataGridTextColumn Header="Temps"
+                                    IsReadOnly="True"
+                                    Width="*"
+                                    Binding="{Binding Verbe.Temps}">
+
                 </DataGridTextColumn>
 
                 <DataGridTextColumn Header="Result:"
