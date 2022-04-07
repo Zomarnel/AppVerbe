@@ -21,18 +21,20 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Content="{Binding ResultsStringFormat}" HorizontalContentAlignment="Center" BorderBrush="DarkBlue" BorderThickness="2"/>
+        <Border Grid.RowSpan="2" Background="PaleGreen"/>
+        
+        <Label Grid.Row="0" Content="{Binding ResultsStringFormat}" HorizontalContentAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
 
-        <DataGrid Grid.Row="1" RowHeight="40" RowBackground="AliceBlue" ItemsSource="{Binding Results}" AutoGenerateColumns="False" Margin="10" HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" CanUserSortColumns="False">
+        <DataGrid Grid.Row="1" RowHeight="40" RowBackground="AliceBlue" ItemsSource="{Binding Results}" AutoGenerateColumns="False" Margin="10, 0" HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" CanUserSortColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Verbe:"
                                     IsReadOnly="True"
                                     Width="*"
-                                    Binding="{Binding Verbe.Name}">
+                                    Binding="{Binding Verbe.Name}" FontWeight="DemiBold" FontSize="17">
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
-                            <Setter Property="Background" Value="PaleVioletRed"/>
+                            <Setter Property="Background" Value="LightCoral"/>
                         </Style>
                     </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>

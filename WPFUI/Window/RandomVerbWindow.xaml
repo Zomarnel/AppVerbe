@@ -31,10 +31,13 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
+
+        <Border Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="2" Background="PaleTurquoise"/>
+
+        <Border Grid.Row="0" Grid.RowSpan="8" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="0.25" Panel.ZIndex="99"/>
+
         <!-- Labels -->
         <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="PaleGoldenrod">
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>

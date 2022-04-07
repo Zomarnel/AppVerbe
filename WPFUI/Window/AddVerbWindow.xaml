@@ -14,7 +14,7 @@
         <BooleanToVisibilityConverter x:Key="BoolenToVisibility"/>
     </Window.Resources>
     
-    <Grid Margin="10">
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -31,6 +31,10 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <Border Grid.RowSpan="8" Grid.ColumnSpan="2" Background="PaleGoldenrod"/>
+        
+        <Border Grid.Row="0" Grid.ColumnSpan="2" Background="PaleGreen"/>
 
         <Grid Grid.Row="0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
@@ -68,43 +72,50 @@
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
             </Grid>
         </Grid>
+        
         <!-- Labels -->
-        <Label Grid.Row="1" Grid.Column="0" Content="Je" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="Tu" VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Grid.Column="0" Content="Il/Elle" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Content="Nous" VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="0" Content="Vous" VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="0" Content="Ils/Elles" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Margin="10, 0, 0, 0" BorderBrush="Black" Content="Je" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0" Margin="10, 0, 0, 0" Content="Tu" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Margin="10, 0, 0, 0" Content="Il/Elle" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0" Margin="10, 0, 0, 0" Content="Nous" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0" Margin="10, 0, 0, 0" Content="Vous" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Grid.Column="0" Margin="10, 0, 0, 0" Content="Ils/Elles" VerticalAlignment="Center"/>
         
         <!--#region TextBoxes-->
         <TextBox Grid.Row="1" Grid.Column="1"
                  x:Name="PPS"
                  Height="25"
+                 Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="2" Grid.Column="1"
                  x:Name="DPS"
                  Height="25"
+                 Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="3" Grid.Column="1
                  " x:Name="TPS"
                  Height="25"
+                 Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="4" Grid.Column="1"
                  x:Name="PPP"
                  Height="25"
+                 Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="5" Grid.Column="1"
                  x:Name="DPP"
                  Height="25"
+                 Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="6" Grid.Column="1"
                  x:Name="TPP"
                  Height="25"
+                 Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <!--#endregion TextBoxes--> 
