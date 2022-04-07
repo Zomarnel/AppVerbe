@@ -30,19 +30,35 @@
                                     Width="*"
                                     Binding="{Binding Verbe.Name}">
 
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="PaleVioletRed"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
                 
                 <DataGridTextColumn Header="Temps"
                                     IsReadOnly="True"
                                     Width="*"
                                     Binding="{Binding Verbe.Temps}">
-
+                    
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="PaleGoldenrod"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
 
                 <DataGridTextColumn Header="Result:"
                                     IsReadOnly="True"
                                     Width="Auto"
-                                    Binding="{Binding Result, Converter={StaticResource ResultConverter}}"/>
+                                    Binding="{Binding Result, Converter={StaticResource ResultConverter}}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="PaleTurquoise"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
