@@ -32,6 +32,8 @@ namespace WPFUI
             };
 
             DataContext = _appSession;
+
+            Name.Focus();
         }
 
         #region Events
@@ -70,8 +72,13 @@ namespace WPFUI
                 }
             }
 
-            if (e.Key == Key.Up)
+            if (e.Key == Key.Up || e.Key == Key.Back)
             {
+                if(e.Key == Key.Back && (((FrameworkElement)sender) as System.Windows.Controls.TextBox).Text != "")
+                {
+                    return;
+                }
+
                 int index = textBoxes.FindIndex(tb => tb.Name == ((FrameworkElement)sender).Name)-1;
 
                 if(index >= 0)

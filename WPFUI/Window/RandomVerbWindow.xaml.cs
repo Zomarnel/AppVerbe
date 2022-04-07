@@ -86,9 +86,14 @@ namespace WPFUI
                 PPS.Focus();
             }
 
-            if(e.Key == Key.Up)
+            if(e.Key == Key.Up || e.Key == Key.Back)
             {
-                for(int i = index-1; i >= 0; i--)
+                if (e.Key == Key.Back && (((FrameworkElement)sender) as System.Windows.Controls.TextBox).Text != "")
+                {
+                    return;
+                }
+
+                for (int i = index-1; i >= 0; i--)
                 {
                     if(indexes.Contains(i))
                     {
