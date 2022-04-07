@@ -1,0 +1,95 @@
+{
+  "Name": "DefaultList",
+  "Verbes": [
+    {
+      "Name": "manger",
+      "Temps": "présent",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "manges"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "mangeons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "mangez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "mangent"
+        }
+      ]
+    },
+    {
+      "Name": "boire",
+      "Temps": "présent",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "bois"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "bois"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "boit"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "buvons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "buvez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "boivent"
+        }
+      ]
+    },
+    {
+      "Name": "être",
+      "Temps": "imparfait",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "étais"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "étais"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "était"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "étions"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "étiez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "étaient"
+        }
+      ]
+    }
+  ]
+}
