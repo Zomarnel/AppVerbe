@@ -7,7 +7,7 @@ using AppVerbe.Models;
 
 namespace WPFUI
 {
-    public partial class AddVerbWindow : Window
+    public partial class AddVerbWindow : System.Windows.Window
     {
         private AppSession _appSession = new AppSession();
 

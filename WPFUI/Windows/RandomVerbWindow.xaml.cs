@@ -7,7 +7,7 @@ using AppVerbe.Models;
 
 namespace WPFUI
 {
-    public partial class RandomVerbWindow : Window
+    public partial class RandomVerbWindow : System.Windows.Window
     {
         #region Properties
         private Verbe _verbe;

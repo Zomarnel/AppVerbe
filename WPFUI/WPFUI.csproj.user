@@ -7,33 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Window\AddVerbWindow.xaml.cs">
+    <Compile Update="Windows\AddVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\Message.xaml.cs">
+    <Compile Update="Windows\CustomizeListMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\RandomVerbWindow.xaml.cs">
+    <Compile Update="Windows\Message.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\ResultsWindow.xaml.cs">
+    <Compile Update="Windows\RandomVerbWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\ResultsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Window\AddVerbWindow.xaml">
+    <Page Update="Windows\AddVerbWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window\Message.xaml">
+    <Page Update="Windows\CustomizeListMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window\RandomVerbWindow.xaml">
+    <Page Update="Windows\Message.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window\ResultsWindow.xaml">
+    <Page Update="Windows\RandomVerbWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\ResultsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

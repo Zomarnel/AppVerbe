@@ -8,7 +8,7 @@ using AppVerbe.Models;
 
 namespace WPFUI
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : System.Windows.Window
     {
         private const string SAVE_LIST_FILE_EXTENSION = "omar";
         private AppSession _appSession;

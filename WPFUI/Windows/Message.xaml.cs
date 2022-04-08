@@ -2,7 +2,7 @@
 
 namespace WPFUI
 {
-    public partial class Message : Window
+    public partial class Message : System.Windows.Window
     {
         public Message(string message)
         {
