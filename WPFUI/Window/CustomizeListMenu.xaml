@@ -17,7 +17,9 @@
         <Button x:Name="AddVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="0"
-                Content="Add new verb">
+                Content="Add New Verb"
+                FontSize="20pt"
+                FontWeight="DemiBold">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Red"/>
@@ -40,10 +42,12 @@
         </Button>
 
 
-        <Button x:Name="DeteleteVerb"
+        <Button x:Name="DeleteVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="1"
-                Content="Detele a verb">
+                Content="Delete A Verb"
+                FontSize="20pt"
+                FontWeight="DemiBold">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Orange"/>
@@ -68,7 +72,9 @@
         <Button x:Name="ModifyVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="2"
-                Content="Modify a verb">
+                Content="Modify A Verb"
+                FontSize="20pt"
+                FontWeight="DemiBold">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="#70be44"/>

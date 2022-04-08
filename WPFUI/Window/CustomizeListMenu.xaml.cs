@@ -38,12 +38,15 @@ namespace WPFUI.Window
                     addVerbWindow.ShowDialog();
                     break;
 
-            }
-        }
+                case "DeleteVerb":
+                    DeleteVerbWindow deletedVerbWindow = new DeleteVerbWindow(_appSession);
 
-        private void AddVerb_IsMouseDirectlyOverChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            AddVerb.Background = Brushes.Green;
+                    deletedVerbWindow.Owner = this.Owner;
+                    deletedVerbWindow.DataContext = _appSession;
+                    deletedVerbWindow.ShowDialog();
+                    break;
+
+            }
         }
     }
 }

@@ -13,7 +13,13 @@
     <Compile Update="Window\CustomizeListMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Window\DeleteVerbWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Window\Message.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window\ModifyVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Window\RandomVerbWindow.xaml.cs">
@@ -33,7 +39,13 @@
     <Page Update="Window\CustomizeListMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Window\DeleteVerbWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Window\Message.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window\ModifyVerbWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\RandomVerbWindow.xaml">

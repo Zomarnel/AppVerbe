@@ -95,7 +95,7 @@
 
             <TextBlock Text="TEST" FontWeight="Bold" x:Name="BottomRightTextBlock" IsHitTestVisible="False"/>
             
-            <TextBlock Text="ADD VERB" FontWeight="Bold" x:Name="BottomLeftTextBlock" IsHitTestVisible="False"/>
+            <TextBlock Text="CUSTOMIZE LIST" FontWeight="Bold" x:Name="BottomLeftTextBlock" IsHitTestVisible="False"/>
             
         </Canvas>
     </Grid>

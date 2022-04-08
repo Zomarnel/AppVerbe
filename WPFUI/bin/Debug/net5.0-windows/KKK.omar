@@ -1,0 +1,35 @@
+{
+  "Name": "DefaultList",
+  "Verbes": [
+    {
+      "Name": "manger",
+      "Temps": "présent",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "manges"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "mangeons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "mangez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "mangent"
+        }
+      ]
+    }
+  ]
+}
