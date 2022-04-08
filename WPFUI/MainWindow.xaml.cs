@@ -5,6 +5,7 @@ using Microsoft.Win32;
 using AppVerbe.ViewModels;
 using AppVerbe.Services;
 using AppVerbe.Models;
+using WPFUI.Window;
 
 namespace WPFUI
 {
@@ -37,11 +38,10 @@ namespace WPFUI
 
         private void AddNewVerb_OnClick(object sender, RoutedEventArgs e)
         {
-            AddVerbWindow addVerbWindow = new AddVerbWindow(_appSession);
+            CustomizeListMenu menu = new CustomizeListMenu(_appSession);
 
-            addVerbWindow.Owner = this;
-            addVerbWindow.DataContext = _appSession;
-            addVerbWindow.ShowDialog();
+            menu.Owner = this;
+            menu.ShowDialog();
         }
 
         private void RandomVerb_OnClick(object sender, RoutedEventArgs e)
