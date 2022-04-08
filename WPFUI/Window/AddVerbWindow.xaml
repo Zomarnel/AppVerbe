@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
-        Title="ADD VERB" Height="450" Width="400">
+        Title="ADD VERB" Height="500" Width="450">
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolenToVisibility"/>
@@ -48,12 +48,13 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Column="0" Content="Nom du verbe" VerticalAlignment="Center"/>
+                <Label Grid.Column="0" Content="Nom du verbe" FontWeight="DemiBold" FontSize="12pt" VerticalAlignment="Center"/>
 
                 <TextBox Grid.Column="1"
                  x:Name="Name"
                  Height="25"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
             </Grid>
 
@@ -63,23 +64,24 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Column="0" Content="Temps" VerticalAlignment="Center"/>
+                <Label Grid.Column="0" Content="Temps" FontWeight="DemiBold" FontSize="12pt" VerticalAlignment="Center"/>
 
                 <TextBox Grid.Column="1"
                  x:Name="Temps"
                  Height="25"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
             </Grid>
         </Grid>
         
         <!-- Labels -->
-        <Label Grid.Row="1" Grid.Column="0" Margin="10, 0, 0, 0" BorderBrush="Black" Content="Je" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="0" Margin="10, 0, 0, 0" Content="Tu" VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Grid.Column="0" Margin="10, 0, 0, 0" Content="Il/Elle" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Margin="10, 0, 0, 0" Content="Nous" VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="0" Margin="10, 0, 0, 0" Content="Vous" VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="0" Margin="10, 0, 0, 0" Content="Ils/Elles" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Je" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Tu" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Il/Elle" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Nous" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Vous" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Ils/Elles" VerticalAlignment="Center"/>
         
         <!--#region TextBoxes-->
         <TextBox Grid.Row="1" Grid.Column="1"
@@ -87,36 +89,42 @@
                  Height="25"
                  Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="2" Grid.Column="1"
                  x:Name="DPS"
                  Height="25"
                  Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="3" Grid.Column="1
                  " x:Name="TPS"
                  Height="25"
                  Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="4" Grid.Column="1"
                  x:Name="PPP"
                  Height="25"
                  Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="5" Grid.Column="1"
                  x:Name="DPP"
                  Height="25"
                  Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <TextBox Grid.Row="6" Grid.Column="1"
                  x:Name="TPP"
                  Height="25"
                  Margin="10, 0, 10, 0"
                  VerticalAlignment="Center"
+                 FontSize="12pt"
                  PreviewKeyDown="MoveToTheNextTextBox_KeyDown"/>
         <!--#endregion TextBoxes--> 
         
