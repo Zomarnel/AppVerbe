@@ -19,26 +19,75 @@
                 Grid.Row="0"
                 Content="Add new verb">
             <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Background" Value="Green"/>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Red"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
                     <Style.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Red"/>
+                            <Setter Property="Background" Value="#f5796d"/>
                         </Trigger>
                     </Style.Triggers>
                 </Style>
             </Button.Style>
         </Button>
-                
+
 
         <Button x:Name="DeteleteVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="1"
-                Content="Detele a verb"/>
-        
+                Content="Detele a verb">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Orange"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#ffc080"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
         <Button x:Name="ModifyVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="2"
-                Content="Modify a verb"/>
+                Content="Modify a verb">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#70be44"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#7dd748"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 </Window>
