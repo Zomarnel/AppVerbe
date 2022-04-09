@@ -7,19 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Window\AddVerbWindow.xaml.cs">
+    <Compile Update="Window\CustomizationWindows\AddVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\CustomizeListMenu.xaml.cs">
+    <Compile Update="Window\CustomizationWindows\CustomizeListMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\DeleteVerbWindow.xaml.cs">
+    <Compile Update="Window\CustomizationWindows\DeleteVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Window\Message.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\ModifyVerbWindow.xaml.cs">
+    <Compile Update="Window\CustomizationWindows\ModifyVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Window\RandomVerbWindow.xaml.cs">
@@ -30,22 +30,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Window\AddVerbWindow.xaml">
+    <Page Update="Window\CustomizationWindows\AddVerbWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window\CustomizeListMenu.xaml">
+    <Page Update="Window\CustomizationWindows\CustomizeListMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window\DeleteVerbWindow.xaml">
+    <Page Update="Window\CustomizationWindows\DeleteVerbWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\Message.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window\ModifyVerbWindow.xaml">
+    <Page Update="Window\CustomizationWindows\ModifyVerbWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\RandomVerbWindow.xaml">
