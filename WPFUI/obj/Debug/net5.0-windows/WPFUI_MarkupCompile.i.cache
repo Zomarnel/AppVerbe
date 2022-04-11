@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\App.xaml
-8-1900000582
+91638113388
 
-151562814858
+16-1802654372
 198-787086477
-MainWindow.xaml;Window\CustomizationWindows\AddVerbWindow.xaml;Window\CustomizationWindows\CustomizeListMenu.xaml;Window\CustomizationWindows\DeleteVerbWindow.xaml;Window\CustomizationWindows\ModifyVerbWindow.xaml;Window\Message.xaml;Window\RandomVerbWindow.xaml;Window\ResultsWindow.xaml;
+MainWindow.xaml;Window\CustomizationWindows\AddVerbWindow.xaml;Window\CustomizationWindows\CustomizeListMenu.xaml;Window\CustomizationWindows\DeleteVerbWindow.xaml;Window\CustomizationWindows\ModifyVerbWindow.xaml;Window\Message.xaml;Window\OptionMessage.xaml;Window\RandomVerbWindow.xaml;Window\ResultsWindow.xaml;
 
-False
+True
 

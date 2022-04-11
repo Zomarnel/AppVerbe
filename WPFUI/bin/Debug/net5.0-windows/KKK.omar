@@ -30,6 +30,36 @@
           "VerbeConjugué": "mangent"
         }
       ]
+    },
+    {
+      "Name": "boire",
+      "Temps": "présent",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "bois"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "bois"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "boit"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "buvons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "buvez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "boivent"
+        }
+      ]
     }
   ]
 }

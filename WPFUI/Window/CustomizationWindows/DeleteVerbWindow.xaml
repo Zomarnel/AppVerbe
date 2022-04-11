@@ -9,17 +9,48 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
-        Title="DeleteVerbWindow" Height="450" Width="400">
+        Title="DeleteVerbWindow" Height="450" Width="450">
+    
     <Grid>
 
-        <DataGrid ItemsSource="{Binding AppData.Verbes}" RowHeight="40" RowBackground="AliceBlue" AutoGenerateColumns="False" Margin="10, 0" HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" CanUserSortColumns="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" ItemsSource="{Binding CheckedVerbes}" x:Name="DataGrid"  RowHeight="40" RowBackground="AliceBlue" AutoGenerateColumns="False"  HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" CanUserSortColumns="False">
+            
+            <DataGrid.CellStyle>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+            
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Width="Auto" Header="Select"/>
-                
+
+                <DataGridTemplateColumn Width="40" Header="Select">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding IsChecked, UpdateSourceTrigger=PropertyChanged}">
+                                <CheckBox.LayoutTransform>
+                                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                                </CheckBox.LayoutTransform>
+                            </CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
                 <DataGridTextColumn Header="Verbe:"
                                     IsReadOnly="True"
                                     Width="*"
-                                    Binding="{Binding Name}" FontWeight="DemiBold" FontSize="17">
+                                    x:Name="Verbe"
+                                    Binding="{Binding Verbe.Name}" FontWeight="DemiBold" FontSize="17">
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
@@ -31,7 +62,7 @@
                 <DataGridTextColumn Header="Temps"
                                     IsReadOnly="True"
                                     Width="*"
-                                    Binding="{Binding Temps}" FontWeight="DemiBold" FontSize="17">
+                                    Binding="{Binding Verbe.Temps}" FontWeight="DemiBold" FontSize="17">
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
@@ -41,5 +72,12 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
+
+        <Button Grid.Row="1" Height="40"
+                Content="DELETE"
+                FontStyle="Italic"
+                FontWeight="UltraBlack"
+                Click="OnClick_DeleteSelectedVerb"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>

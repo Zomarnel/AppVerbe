@@ -9,7 +9,11 @@ namespace AppVerbe.ViewModels
     public class AppSession : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         public AppData AppData { get; set; }
+
+        public List<CheckedVerbe> CheckedVerbes { get; set; }
+            
         public AppSession()
         {
             AppData = new AppData("DefaultList", new List<Verbe>());

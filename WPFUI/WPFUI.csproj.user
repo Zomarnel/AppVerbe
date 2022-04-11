@@ -22,6 +22,9 @@
     <Compile Update="Window\CustomizationWindows\ModifyVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Window\OptionMessage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Window\RandomVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\CustomizationWindows\ModifyVerbWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window\OptionMessage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\RandomVerbWindow.xaml">

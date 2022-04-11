@@ -34,5 +34,17 @@ namespace AppVerbe.Models
         {
             return new List<Verbe>(Verbes);
         }
+
+        public List<CheckedVerbe> ConvertVerbesToChecked()
+        {
+            List<CheckedVerbe> checkedVerbes = new List<CheckedVerbe>();
+
+            foreach(Verbe verbe in Verbes)
+            {
+                checkedVerbes.Add(new CheckedVerbe(verbe));
+            }
+
+            return checkedVerbes;
+        }
     }
 }
