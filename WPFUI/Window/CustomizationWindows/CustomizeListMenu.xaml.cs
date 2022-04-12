@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using AppVerbe.ViewModels;
 
 namespace WPFUI.Window
@@ -34,7 +23,6 @@ namespace WPFUI.Window
                     AddVerbWindow addVerbWindow = new AddVerbWindow(_appSession);
 
                     addVerbWindow.Owner = this.Owner;
-                    addVerbWindow.DataContext = _appSession;
                     addVerbWindow.ShowDialog();
                     break;
 
@@ -42,8 +30,13 @@ namespace WPFUI.Window
                     DeleteVerbWindow deletedVerbWindow = new DeleteVerbWindow(_appSession);
 
                     deletedVerbWindow.Owner = this.Owner;
-                    deletedVerbWindow.DataContext = _appSession;
                     deletedVerbWindow.ShowDialog();
+                    break;
+                case "ModifyVerb":
+                    ModifyVerbWindow modifyVerbWindow = new ModifyVerbWindow(_appSession);
+
+                    modifyVerbWindow.Owner = this.Owner;
+                    modifyVerbWindow.ShowDialog();
                     break;
 
             }

@@ -16,6 +16,9 @@
     <Compile Update="Window\CustomizationWindows\DeleteVerbWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Window\CustomizationWindows\VerbModificationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Window\Message.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\CustomizationWindows\DeleteVerbWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window\CustomizationWindows\VerbModificationWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\Message.xaml">

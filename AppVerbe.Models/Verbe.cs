@@ -5,10 +5,10 @@ namespace AppVerbe.Models
 {
     public class Verbe : INotifyPropertyChanged
     {
-        public string Name { get; init; }
+        public string Name { get; set; }
 
-        public string Temps { get; init; }
-        public List<ConjuguatedForm> ConjuguatedForms { get; init; }
+        public string Temps { get; set; }
+        public List<ConjuguatedForm> ConjuguatedForms { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

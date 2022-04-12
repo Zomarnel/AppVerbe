@@ -1,24 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using AppVerbe.ViewModels;
+using AppVerbe.Models;
+using WPFUI.Window.CustomizationWindows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.Windows;
+using System.Linq;
 
 namespace WPFUI.Window
 {
     public partial class ModifyVerbWindow : System.Windows.Window
     {
-        public ModifyVerbWindow()
+        private AppSession _appSession;
+
+        public ModifyVerbWindow(AppSession appSession)
         {
             InitializeComponent();
+
+            _appSession = appSession;
+
+            DataContext = _appSession;
+        }
+
+        private void OnClick_ModifyVerb(object sender, RoutedEventArgs e)
+        {
+            Verbe verbe = ((FrameworkElement)sender).DataContext as Verbe;
+            
+            VerbModificationWindow verbModificationWindow = new VerbModificationWindow(verbe);
+
+            verbModificationWindow.Owner = this.Owner;
+
+            verbModificationWindow.ShowDialog();
         }
     }
 }

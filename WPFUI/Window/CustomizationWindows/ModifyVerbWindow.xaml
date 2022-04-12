@@ -3,10 +3,68 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:AppVerbe.ViewModels;assembly=AppVerbe.ViewModels"
+        d:DataContext="{d:DesignInstance viewModels:AppSession}"
         xmlns:local="clr-namespace:WPFUI.Window"
         mc:Ignorable="d"
-        Title="ModifyVerbWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterOwner"
+        FontSize="11pt"
+        Title="ModifyVerbWindow" Height="450" Width="450">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" ItemsSource="{Binding AppData.Verbes}" x:Name="DataGrid"  RowHeight="40" RowBackground="AliceBlue" AutoGenerateColumns="False"  HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" CanUserSortColumns="False">
+
+            <DataGrid.CellStyle>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+            
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Modify" Width="50" Click="OnClick_ModifyVerb"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                <DataGridTextColumn Header="Verbe:"
+                                    IsReadOnly="True"
+                                    Width="*"
+                                    x:Name="Verbe"
+                                    Binding="{Binding Name}" FontWeight="DemiBold" FontSize="17">
+
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="LightCoral"/>
+                        </Style>
+
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Temps"
+                                    IsReadOnly="True"
+                                    Width="*"
+                                    Binding="{Binding Temps}" FontWeight="DemiBold" FontSize="17">
+
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="PaleGoldenrod"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
