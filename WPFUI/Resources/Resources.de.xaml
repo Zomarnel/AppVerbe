@@ -40,8 +40,4 @@
     <system:String x:Key="Are_U_Sure?">Bist du sicher?</system:String>
     <system:String x:Key="You_Did_It!">Holz bin ich auf dich!</system:String>
 
-
-
-
-
 </ResourceDictionary>

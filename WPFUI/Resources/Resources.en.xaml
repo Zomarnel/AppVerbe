@@ -35,14 +35,9 @@
     <system:String x:Key="Missing_Name">Missing Name</system:String>
     <system:String x:Key="Missing_Time">Missing Time</system:String>
     <system:String x:Key="Missing_Conjuguated_Form">Missing Conjuguated Form</system:String>
-    <system:String x:Key="Verb_Already_Existing_In_Current_List">Verb Already Existing In Current List</system:String>
-    <system:String x:Key="Bru_Select_Atleast_One">Bru select atleast one</system:String>
+    <system:String x:Key="Verb_Already_Existing_In_Current_List">Verb already existing in current list</system:String>
+    <system:String x:Key="Bru_Select_Atleast_One">Bru select atleast one verb</system:String>
     <system:String x:Key="Are_U_Sure?">Are u sure?</system:String>
-    <system:String x:Key="You_Did_It!">You Did It!</system:String>
-
-
-
-
-
+    <system:String x:Key="You_Did_It!">You did it!</system:String>
 
 </ResourceDictionary>

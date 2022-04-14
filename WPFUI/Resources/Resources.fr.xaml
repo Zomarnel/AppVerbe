@@ -7,12 +7,12 @@
     <system:String x:Key="LanguageMenuFrench">Français</system:String>
     <system:String x:Key="LanguageMenuGerman">Allemand</system:String>
 
-    <system:String x:Key="NewListMenu">Nouvelle liste</system:String>
+    <system:String x:Key="NewListMenu">Nouvelle Liste</system:String>
 
     <system:String x:Key="LoadListButton">Charger Liste</system:String>
     <system:String x:Key="SaveListButton">Sauvegarder Liste</system:String>
     <system:String x:Key="CustomizeListButton">Personnaliser Liste</system:String>
-    <system:String x:Key="RandomVerbButton">Verbe au hasard</system:String>
+    <system:String x:Key="RandomVerbButton">Verbe Au Hasard</system:String>
 
     <system:String x:Key="LabelFirstPerson">Je</system:String>
     <system:String x:Key="LabelSecondPerson">Tu</system:String>
@@ -27,16 +27,17 @@
     <system:String x:Key="TitleDeleteVerb">Supprimer Verbe</system:String>
     <system:String x:Key="TitleModifyVerb">Modifier Verbe</system:String>
 
-    <system:String x:Key="ButtonAddVerb">Ajouter Verbe à la Liste</system:String>
+    <system:String x:Key="ButtonAddVerb">Ajouter Verbe à La Liste</system:String>
     <system:String x:Key="ButtonResetVerb">Resetter Verbe</system:String>
 
     <system:String x:Key="MessageTitle">Message! Baguette!</system:String>
-    <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Verbe Ajouté Sans Aucun Problème à La Liste!</system:String>
+    <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Verbe ajouté sans aucun problème à la Liste!</system:String>
     <system:String x:Key="Missing_Name">Nom Manquant</system:String>
     <system:String x:Key="Missing_Time">Temps Manquant</system:String>
     <system:String x:Key="Missing_Conjuguated_Form">Forme Conjugué Manquante</system:String>
-    <system:String x:Key="Bru_Select_Atleast_One">Mec choisis-en au moins un</system:String>
+    <system:String x:Key="Verb_Already_Existing_In_Current_List">Verbe existant déjà dans la liste</system:String>
+    <system:String x:Key="Bru_Select_Atleast_One">Mec choisis au moins un verbe</system:String>
     <system:String x:Key="Are_U_Sure?">T'es sûr?</system:String>
-    <system:String x:Key="You_Did_It!">Tu As Réussi!</system:String>
+    <system:String x:Key="You_Did_It!">Tu as réussi!</system:String>
 
 </ResourceDictionary>
