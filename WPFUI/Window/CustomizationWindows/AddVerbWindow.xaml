@@ -137,11 +137,11 @@
 
             <Button x:Name="AddVerb_Button"
                     Grid.Column="0"
-                    Content="Add verb to current list"
+                    Content="{DynamicResource ButtonAddVerb}"
                     Click="AddVerb_OnClick"/>
 
             <Button Grid.Column="1"
-                    Content="Reset"
+                    Content="{DynamicResource ButtonResetVerb}"
                     Click="ResetCurrentVerb_OnClick"/>
         </Grid>
     </Grid>

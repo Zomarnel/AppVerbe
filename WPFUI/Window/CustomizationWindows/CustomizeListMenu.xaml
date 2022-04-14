@@ -17,9 +17,10 @@
         <Button x:Name="AddVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="0"
-                Content="Add New Verb"
+                Content="{DynamicResource TitleAddVerb}"
                 FontSize="20pt"
                 FontWeight="DemiBold">
+            
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Red"/>
@@ -45,9 +46,10 @@
         <Button x:Name="DeleteVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="1"
-                Content="Delete A Verb"
+                Content="{DynamicResource TitleDeleteVerb}"
                 FontSize="20pt"
                 FontWeight="DemiBold">
+            
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Orange"/>
@@ -72,7 +74,7 @@
         <Button x:Name="ModifyVerb"
                 Click="OpenWindow_OnClick"
                 Grid.Row="2"
-                Content="Modify A Verb"
+                Content="{DynamicResource TitleModifyVerb}"
                 FontSize="20pt"
                 FontWeight="DemiBold">
             <Button.Style>

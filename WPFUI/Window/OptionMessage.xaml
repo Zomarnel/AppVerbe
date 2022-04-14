@@ -6,7 +6,7 @@
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
         mc:Ignorable="d"
-        Title="Message" Height="200" Width="200">
+        Title="Message" Height="200" Width="250">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,7 +17,7 @@
         <Border Background="#5fcbfc" Grid.RowSpan="3"/>
 
         <Label Grid.Row="0" 
-               Content="Message!"
+               Content="{DynamicResource MessageTitle}"
                HorizontalContentAlignment="Center"
                FontWeight="Bold"/>
 

@@ -23,5 +23,20 @@
     <system:String x:Key="LabelVerbName">Nom</system:String>
     <system:String x:Key="LabelVerbTime">Temps</system:String>
 
+    <system:String x:Key="TitleAddVerb">Ajouter Verbe</system:String>
+    <system:String x:Key="TitleDeleteVerb">Supprimer Verbe</system:String>
+    <system:String x:Key="TitleModifyVerb">Modifier Verbe</system:String>
+
+    <system:String x:Key="ButtonAddVerb">Ajouter Verbe à la Liste</system:String>
+    <system:String x:Key="ButtonResetVerb">Resetter Verbe</system:String>
+
+    <system:String x:Key="MessageTitle">Message! Baguette!</system:String>
+    <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Verbe Ajouté Sans Aucun Problème à La Liste!</system:String>
+    <system:String x:Key="Missing_Name">Nom Manquant</system:String>
+    <system:String x:Key="Missing_Time">Temps Manquant</system:String>
+    <system:String x:Key="Missing_Conjuguated_Form">Forme Conjugué Manquante</system:String>
+    <system:String x:Key="Bru_Select_Atleast_One">Mec choisis-en au moins un</system:String>
+    <system:String x:Key="Are_U_Sure?">T'es sûr?</system:String>
+    <system:String x:Key="You_Did_It!">Tu As Réussi!</system:String>
 
 </ResourceDictionary>

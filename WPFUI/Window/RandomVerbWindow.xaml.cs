@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.Linq;
 using AppVerbe.Models;
+using AppVerbe.ViewModels;
 
 namespace WPFUI
 {
@@ -14,6 +15,8 @@ namespace WPFUI
 
         private List<Verbe> _verbes;
 
+        private AppSession _appSession;
+
         private VerbeResults _finalResults = new VerbeResults();
 
         private List<System.Windows.Controls.TextBox> textBoxes;
@@ -22,11 +25,13 @@ namespace WPFUI
 
         #endregion Properties
 
-        public RandomVerbWindow(List<Verbe> verbes)
+        public RandomVerbWindow(AppSession appSession)
         {
             InitializeComponent();
 
-            _verbes = verbes;
+            _verbes = appSession.AppData.CloneVerbs();
+
+            _appSession = appSession;
 
             textBoxes = new List<System.Windows.Controls.TextBox>
             {
@@ -142,7 +147,7 @@ namespace WPFUI
                 DataContext = _verbe;
             }else
             {
-                MessageBroker.CreateNewMessage(this, "You did it!");
+                MessageBroker.CreateNewMessage(this, "You_Did_It!", _appSession.AppData.App_Language);
 
                 ResultsWindow resultsWindow = new ResultsWindow(_finalResults);
 

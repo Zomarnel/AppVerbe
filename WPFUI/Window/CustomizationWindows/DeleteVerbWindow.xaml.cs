@@ -26,10 +26,10 @@ namespace WPFUI.Window
         {
             if(!_appSession.CheckedVerbes.Any(cv => cv.IsChecked))
             {
-                MessageBroker.CreateNewMessage(this, "Bru select atleast one");
+                MessageBroker.CreateNewMessage(this, "Bru_Select_Atleast_One", _appSession.AppData.App_Language);
             }else
             {
-                if (MessageBroker.CreateNewOptionMessage(this, "Are u sure?"))
+                if (MessageBroker.CreateNewOptionMessage(this, "Are_U_Sure?"))
                 {
                     foreach (CheckedVerbe checkedVerbe in _appSession.CheckedVerbes.Where(cv => cv.IsChecked))
                     {

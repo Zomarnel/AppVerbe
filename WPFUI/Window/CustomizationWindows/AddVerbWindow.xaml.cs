@@ -50,7 +50,7 @@ namespace WPFUI
 
                 Name.Focus();
 
-                MessageBroker.CreateNewMessage(this, "Successfully added a verb to the current list!");
+                MessageBroker.CreateNewMessage(this, "Successfully_added_a_verb_to_the_current_list!", _appSession.AppData.App_Language);
             }
         }
 
@@ -125,25 +125,25 @@ namespace WPFUI
 
             if(Name.Text == "")
             {
-                MessageBroker.CreateNewMessage(this, "Missing name.");
+                MessageBroker.CreateNewMessage(this, "Missing_Name", _appSession.AppData.App_Language);
                 return false;
             }
 
             if (Temps.Text == "")
             {
-                MessageBroker.CreateNewMessage(this, "Missing temps");
+                MessageBroker.CreateNewMessage(this, "Missing_Time", _appSession.AppData.App_Language);
                 return false;
             }
 
             if (!textBoxes.Any(tb => tb != Name && tb.Text != "" && tb != Temps))
             {
-                MessageBroker.CreateNewMessage(this, "Missing conjuguated form.");
+                MessageBroker.CreateNewMessage(this, "Missing_Conjuguated_Form", _appSession.AppData.App_Language);
                 return false;
             }
 
             if(_appSession.AppData.CheckIfVerbeInsideList(verbe))
             {
-                MessageBroker.CreateNewMessage(this, "Verb already existing in current list.");
+                MessageBroker.CreateNewMessage(this, "Verb_Already_Existing_In_Current_List", _appSession.AppData.App_Language);
                 return false;
             }
 

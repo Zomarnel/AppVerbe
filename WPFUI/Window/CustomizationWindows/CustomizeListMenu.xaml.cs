@@ -13,6 +13,8 @@ namespace WPFUI.Window
             InitializeComponent();
 
             _appSession = appSession;
+
+            LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
         }
 
         private void OpenWindow_OnClick(object sender, RoutedEventArgs e)
