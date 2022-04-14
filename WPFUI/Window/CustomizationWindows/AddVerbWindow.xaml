@@ -48,7 +48,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Column="0" Content="Nom du verbe" FontWeight="DemiBold" FontSize="12pt" VerticalAlignment="Center"/>
+                <Label Grid.Column="0" Content="{DynamicResource LabelVerbName}" FontWeight="DemiBold" FontSize="12pt" VerticalAlignment="Center"/>
 
                 <TextBox Grid.Column="1"
                  x:Name="Name"
@@ -64,7 +64,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Column="0" Content="Temps" FontWeight="DemiBold" FontSize="12pt" VerticalAlignment="Center"/>
+                <Label Grid.Column="0" Content="{DynamicResource LabelVerbTime}" FontWeight="DemiBold" FontSize="12pt" VerticalAlignment="Center"/>
 
                 <TextBox Grid.Column="1"
                  x:Name="Temps"
@@ -76,12 +76,12 @@
         </Grid>
         
         <!-- Labels -->
-        <Label Grid.Row="1" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Je" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Tu" VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Il/Elle" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Nous" VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Vous" VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="Ils/Elles" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelFirstPerson}" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelSecondPerson}" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelThirdPerson}" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelFourthPerson}" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelFifthPerson}" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Grid.Column="0" Margin="10, 0, 0, 0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelSixthPerson}" VerticalAlignment="Center"/>
         
         <!--#region TextBoxes-->
         <TextBox Grid.Row="1" Grid.Column="1"

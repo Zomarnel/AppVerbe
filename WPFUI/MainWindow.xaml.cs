@@ -23,9 +23,21 @@ namespace WPFUI
             _appSession = new AppSession();
 
             DataContext = _appSession;
+
+            LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
         }
 
         #region Events
+        private void ChangeLanguage_OnClick(object sender, RoutedEventArgs e)
+        {
+            string language = (string)(((FrameworkElement)sender) as MenuItem).CommandParameter;
+
+            _appSession.AppData.App_Language = language;
+
+            LanguageService.ChangeLanguage(this, language);
+
+        }
+
         private void SaveGame_OnClick(object sender, RoutedEventArgs e)
         {
             SaveGame();
@@ -102,6 +114,8 @@ namespace WPFUI
             if (openFileDialog.ShowDialog() == true)
             {
                 _appSession.AppData = SavingService.LoadListOrCreateNewOne(openFileDialog.FileName);
+
+                LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
             }
         }
 
@@ -154,6 +168,7 @@ namespace WPFUI
             Canvas.SetBottom(BottomLeftTextBlock, Canvas.GetBottom(BottomLeftButton) + ((WIDTH_HEIGHT - BottomLeftTextBlock.ActualHeight) / 2) + 8);
 
         }
+       
         #endregion
     }
 }

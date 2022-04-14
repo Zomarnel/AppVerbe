@@ -23,8 +23,16 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" BorderBrush="Black" Background="LightCoral"/>
-                             
+        <Menu Grid.Row="0" Background="AliceBlue" FontSize="11pt">
+
+            <MenuItem Header="{DynamicResource ChangeLanguageMenu}" Height="30">
+                <MenuItem Header="{DynamicResource LanguageMenuEnglish}" CommandParameter="en" Click="ChangeLanguage_OnClick"/>
+                <MenuItem Header="{DynamicResource LanguageMenuFrench}" CommandParameter="fr" Click="ChangeLanguage_OnClick"/>
+                <MenuItem Header="{DynamicResource LanguageMenuGerman}" CommandParameter="de" Click="ChangeLanguage_OnClick"/>
+            </MenuItem>
+            <MenuItem Header="{DynamicResource NewListMenu}" Height="30"/>
+        </Menu>
+
         <Border Grid.Row="2" BorderBrush="Black" Background="LightCoral"/>
                              
         <Border Grid.Row="1" BorderBrush="Black" Background="LightGoldenrodYellow"/>
@@ -89,15 +97,16 @@
             </Button>
 
             <!--TextBlocks-->
-            <TextBlock Text="LOAD LIST" FontWeight="Bold" x:Name="TopLeftTextBlock" IsHitTestVisible="False"/>
-            
-            <TextBlock Text="SAVE LIST" FontWeight="Bold" x:Name="TopRightTextBlock" IsHitTestVisible="False"/>
+            <TextBlock Text="{DynamicResource LoadListButton}" SizeChanged="MainCanvas_SizeChanged" FontWeight="Bold" x:Name="TopLeftTextBlock" IsHitTestVisible="False"/>
 
-            <TextBlock Text="TEST" FontWeight="Bold" x:Name="BottomRightTextBlock" IsHitTestVisible="False"/>
-            
-            <TextBlock Text="CUSTOMIZE LIST" FontWeight="Bold" x:Name="BottomLeftTextBlock" IsHitTestVisible="False"/>
+            <TextBlock Text="{DynamicResource SaveListButton}" FontWeight="Bold" x:Name="TopRightTextBlock" IsHitTestVisible="False"/>
+
+            <TextBlock Text="{DynamicResource RandomVerbButton}" FontWeight="Bold" x:Name="BottomRightTextBlock" IsHitTestVisible="False"/>
+
+            <TextBlock Text="{DynamicResource CustomizeListButton}" FontWeight="Bold" x:Name="BottomLeftTextBlock" IsHitTestVisible="False"/>
             
         </Canvas>
     </Grid>
+    
 </Window>
     

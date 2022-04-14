@@ -9,10 +9,14 @@ namespace AppVerbe.Models
 
         public List<Verbe> Verbes { get; }
 
+        public string App_Language { get; set; }
+
         public AppData(string name, List<Verbe> verbes)
         {
             Name = name;
             Verbes = verbes;
+
+            App_Language = "en";
         }
 
         public bool CheckIfVerbeInsideList(Verbe verbe)

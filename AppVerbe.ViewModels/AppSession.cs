@@ -18,6 +18,7 @@ namespace AppVerbe.ViewModels
         {
             AppData = new AppData("DefaultList", new List<Verbe>());
         }
+
         public Verbe ReturnRandomVerbe()
         {
             Random random = new Random();

@@ -14,15 +14,21 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppV
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.ViewModels.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\AppVerbe.Services.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.csproj.AssemblyReference.cache
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Resources\Resources.de.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Resources\Resources.en.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Resources\Resources.fr.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\AddVerbWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\Message.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\OptionMessage.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\RandomVerbWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\AddVerbWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\CustomizeListMenu.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\DeleteVerbWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\ModifyVerbWindow.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\VerbModificationWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\Message.g.cs
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\OptionMessage.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\RandomVerbWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\ResultsWindow.g.cs
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\App.g.cs
@@ -33,6 +39,7 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Main
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\CustomizeListMenu.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\DeleteVerbWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\ModifyVerbWindow.baml
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\VerbModificationWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\ResultsWindow.baml
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.g.resources
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.GeneratedMSBuildEditorConfig.editorconfig
@@ -44,7 +51,3 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFU
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\ref\WPFUI.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.genruntimeconfig.cache
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\OptionMessage.baml
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\OptionMessage.g.cs
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\VerbModificationWindow.g.cs
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\Window\CustomizationWindows\VerbModificationWindow.baml

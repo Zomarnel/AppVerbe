@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+
+    <system:String x:Key="ChangeLanguageMenu">Sprache ändern</system:String>
+    <system:String x:Key="LanguageMenuEnglish">Englisch</system:String>
+    <system:String x:Key="LanguageMenuFrench">Französisch</system:String>
+    <system:String x:Key="LanguageMenuGerman">Deutsch</system:String>
+
+    <system:String x:Key="NewListMenu">Neue liste</system:String>
+
+    <system:String x:Key="LoadListButton">Liste laden</system:String>
+    <system:String x:Key="SaveListButton">Liste speichern</system:String>
+    <system:String x:Key="CustomizeListButton">List anpassen</system:String>
+    <system:String x:Key="RandomVerbButton">Zufälliges Verb</system:String>
+
+    <system:String x:Key="LabelFirstPerson">Ich</system:String>
+    <system:String x:Key="LabelSecondPerson">Du</system:String>
+    <system:String x:Key="LabelThirdPerson">Er/Sie/Es</system:String>
+    <system:String x:Key="LabelFourthPerson">Wir</system:String>
+    <system:String x:Key="LabelFifthPerson">Ihr</system:String>
+    <system:String x:Key="LabelSixthPerson">sie/Sie</system:String>
+    <system:String x:Key="LabelVerbName">Name</system:String>
+    <system:String x:Key="LabelVerbTime">Zeit</system:String>
+
+</ResourceDictionary>

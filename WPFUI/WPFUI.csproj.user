@@ -35,7 +35,17 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+    <Page Update="Resources\Resources.de.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Resources.en.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Resources.fr.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Window\CustomizationWindows\AddVerbWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

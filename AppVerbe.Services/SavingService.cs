@@ -45,7 +45,10 @@ namespace AppVerbe.Services
                                      conjuguatedForms));
             }
 
-            return new AppData((string)data[nameof(AppData.Name)], verbes);
+            AppData appData = new AppData((string)data[nameof(AppData.Name)], verbes);
+
+            appData.App_Language = (string)data[nameof(AppData.App_Language)];
+            return appData;
         }
     }
 }

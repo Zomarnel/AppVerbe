@@ -34,6 +34,8 @@ namespace WPFUI
             DataContext = _appSession;
 
             Name.Focus();
+
+            LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
         }
 
         #region Events
