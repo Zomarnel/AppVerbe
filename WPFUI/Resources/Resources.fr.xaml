@@ -29,6 +29,8 @@
 
     <system:String x:Key="ButtonAddVerb">Ajouter Verbe à La Liste</system:String>
     <system:String x:Key="ButtonResetVerb">Resetter Verbe</system:String>
+    <system:String x:Key="ButtonDelete">ÉLIMINER</system:String>
+    <system:String x:Key="ButtonModify">Modifier</system:String>
 
     <system:String x:Key="MessageTitle">Message! Baguette!</system:String>
     <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Verbe ajouté sans aucun problème à la Liste!</system:String>
@@ -39,5 +41,8 @@
     <system:String x:Key="Bru_Select_Atleast_One">Mec choisis au moins un verbe</system:String>
     <system:String x:Key="Are_U_Sure?">T'es sûr?</system:String>
     <system:String x:Key="You_Did_It!">Tu as réussi!</system:String>
+
+    <system:String x:Key="VerbName">Verbe</system:String>
+    <system:String x:Key="VerbTime">Temps</system:String>
 
 </ResourceDictionary>

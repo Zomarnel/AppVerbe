@@ -17,6 +17,8 @@ namespace WPFUI.Window
 
             _appSession = appSession;
 
+            LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
+
             DataContext = _appSession;
         }
 

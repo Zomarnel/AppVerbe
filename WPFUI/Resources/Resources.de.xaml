@@ -29,6 +29,8 @@
 
     <system:String x:Key="ButtonAddVerb">Verb zur Liste hinzufügen</system:String>
     <system:String x:Key="ButtonResetVerb">Verb zurücksetzen</system:String>
+    <system:String x:Key="ButtonDelete">LÖSCHEN!!!!!!</system:String>
+    <system:String x:Key="ButtonModify">Modifizieren</system:String>
 
     <system:String x:Key="MessageTitle">Mitteilung!</system:String>
     <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Erfolgreich ein Verb zur Liste hinzugefügt</system:String>
@@ -39,5 +41,9 @@
     <system:String x:Key="Bru_Select_Atleast_One">Bruder wähle mindestens ein Verb</system:String>
     <system:String x:Key="Are_U_Sure?">Bist du sicher?</system:String>
     <system:String x:Key="You_Did_It!">Holz bin ich auf dich!</system:String>
+
+    <system:String x:Key="VerbName">Verb</system:String>
+    <system:String x:Key="VerbTime">Zeit</system:String>
+
 
 </ResourceDictionary>

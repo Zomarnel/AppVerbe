@@ -18,8 +18,9 @@ namespace WPFUI.Window
 
             _appSession.CheckedVerbes = _appSession.AppData.ConvertVerbesToChecked();
 
-            DataContext = _appSession;
+            LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
 
+            DataContext = _appSession;
         }
 
         private void OnClick_DeleteSelectedVerb(object sender, RoutedEventArgs e)
