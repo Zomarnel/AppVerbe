@@ -1,0 +1,99 @@
+{
+  "Name": "DefaultList",
+  "Verbes": [
+    {
+      "ToolTipContent": "Ich         esse\r\nDu         isst\r\nEr/Sie/Es         isst\r\nWir         essen\r\nIhr         esst\r\nsie/Sie         essen\r\n",
+      "Name": "essen",
+      "Temps": "präsens",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "esse"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "isst"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "isst"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "essen"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "esst"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "essen"
+        }
+      ]
+    },
+    {
+      "ToolTipContent": "Ich         erschoss\r\nDu         erschossest\r\nEr/Sie/Es         erschoss\r\nWir         erschossen\r\nIhr         erschosst\r\nsie/Sie         erschossen\r\n",
+      "Name": "erschießen",
+      "Temps": "präteritum",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "erschoss"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "erschossest"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "erschoss"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "erschossen"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "erschosst"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "erschossen"
+        }
+      ]
+    },
+    {
+      "ToolTipContent": "Ich         bin gerannt\r\nDu         bist gerannt\r\nEr/Sie/Es         ist gerannt\r\nWir         sind gerannt\r\nIhr         seid gerannt\r\nsie/Sie         sind gerannt\r\n",
+      "Name": "rennen",
+      "Temps": "perfekt",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "bin gerannt"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "bist gerannt"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "ist gerannt"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "sind gerannt"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "seid gerannt"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "sind gerannt"
+        }
+      ]
+    }
+  ],
+  "App_Language": "de"
+}

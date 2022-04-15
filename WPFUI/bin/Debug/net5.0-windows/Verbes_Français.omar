@@ -1,0 +1,130 @@
+{
+  "Name": "DefaultList",
+  "Verbes": [
+    {
+      "ToolTipContent": "Je         mange\r\nTu         manges\r\nIl/Elle         mange\r\nNous         mangeons\r\nVous         mangez\r\nIls/Elles         mangent\r\n",
+      "Name": "manger",
+      "Temps": "présent",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "manges"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "mange"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "mangeons"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "mangez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "mangent"
+        }
+      ]
+    },
+    {
+      "ToolTipContent": "Je         ajoutais\r\nTu         ajoutais\r\nIl/Elle         ajoutait\r\nNous         ajoutions\r\nVous         ajoutiez\r\nIls/Elles         ajoutaient\r\n",
+      "Name": "ajouter",
+      "Temps": "imparfait",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "ajoutais"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "ajoutais"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "ajoutait"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "ajoutions"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "ajoutiez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "ajoutaient"
+        }
+      ]
+    },
+    {
+      "ToolTipContent": "Je         ai détruit\r\nTu         as détruit\r\nIl/Elle         a détruit\r\nNous         avons détruit\r\nVous         avez détruit\r\nIls/Elles         ont détruit\r\n",
+      "Name": "détruire",
+      "Temps": "passé composé",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "ai détruit"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "as détruit"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "a détruit"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "avons détruit"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "avez détruit"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "ont détruit"
+        }
+      ]
+    },
+    {
+      "ToolTipContent": "Je         ajoute\r\nTu         ajoutes\r\nIl/Elle         ajoute\r\nNous         ajoutions\r\nVous         ajoutiez\r\nIls/Elles         ajoutent\r\n",
+      "Name": "ajouter",
+      "Temps": "subjonctif présent",
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "ajoute"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "ajoutes"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "ajoute"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "ajoutions"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "ajoutiez"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "ajoutent"
+        }
+      ]
+    }
+  ],
+  "App_Language": "fr"
+}
