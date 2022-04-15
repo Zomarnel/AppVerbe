@@ -1,8 +1,6 @@
 ﻿using System.Windows;
 using System.Collections.Generic;
 using AppVerbe.Models;
-using System;
-
 namespace WPFUI
 {
     public partial class ResultsWindow : System.Windows.Window
@@ -17,11 +15,7 @@ namespace WPFUI
 
             LanguageService.ChangeLanguage(this, language);
 
-            ResourceDictionary translater = new ResourceDictionary();
-
-            translater.Source = new Uri("..\\Resources/Resources." + $"{language}" + ".xaml", UriKind.Relative);
-
-            ResultsLabel.Content = translater["Final Results: "] + _finalResults.ResultsStringFormat;
+            ResultsLabel.Content = LanguageService.Translate("Final Results: ", language) + _finalResults.ResultsStringFormat;
 
             DataContext = _finalResults;
         }

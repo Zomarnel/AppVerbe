@@ -17,8 +17,6 @@ namespace AppVerbe.Models
 
         public string ReturnPersonneInStringFormat()
         {
-            
-
             switch(Personne)
             {
                 case 1:

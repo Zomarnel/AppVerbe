@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -27,6 +26,7 @@ namespace AppVerbe.Services
             File.WriteAllText(fileName,
                               JsonConvert.SerializeObject(appData, Formatting.Indented));
         }
+
         private static AppData CreateAppData(JObject data)
         {
             List<Verbe> verbes = new List<Verbe>();

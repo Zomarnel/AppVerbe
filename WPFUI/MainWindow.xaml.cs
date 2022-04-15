@@ -36,7 +36,6 @@ namespace WPFUI
             _appSession.AppData.App_Language = language;
 
             LanguageService.ChangeLanguage(this, language);
-
         }
 
         private void SaveGame_OnClick(object sender, RoutedEventArgs e)

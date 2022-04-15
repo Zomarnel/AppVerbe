@@ -12,15 +12,11 @@ namespace WPFUI
     {
         public static void CreateToolTip(Verbe verbe, string language)
         {
-            ResourceDictionary translater = new ResourceDictionary();
-
             string toolTipContent = "";
-
-            translater.Source = new Uri("..\\Resources/Resources." + $"{language}" + ".xaml", UriKind.Relative);
 
             foreach (ConjuguatedForm conjuguatedForm in verbe.ConjuguatedForms)
             {
-                toolTipContent += translater[conjuguatedForm.ReturnPersonneInStringFormat()];
+                toolTipContent += LanguageService.Translate(conjuguatedForm.ReturnPersonneInStringFormat(), language);
 
                 toolTipContent += "         ";
 

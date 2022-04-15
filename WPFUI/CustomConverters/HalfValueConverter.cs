@@ -11,7 +11,6 @@ namespace WPFUI.CustomConverters
 
             double totalHeight = (double)value;
             return (object)(totalHeight / 2);
-
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

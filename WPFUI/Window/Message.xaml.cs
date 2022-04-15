@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WPFUI
 {
@@ -9,15 +8,9 @@ namespace WPFUI
         {
             InitializeComponent();
 
-
             LanguageService.ChangeLanguage(this, language);
 
-            var translater = new ResourceDictionary();
-            translater.Source =
-                new Uri("..\\Resources/Resources." + $"{language}" + ".xaml",
-                        UriKind.RelativeOrAbsolute);
-
-            MessageLabel.Content = translater[message];
+            MessageLabel.Content = LanguageService.Translate(message, language);
             ButtonClose.Focus();
         }
 

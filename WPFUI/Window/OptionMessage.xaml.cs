@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace WPFUI.Window
@@ -13,12 +12,7 @@ namespace WPFUI.Window
 
             LanguageService.ChangeLanguage(this, language);
 
-            var translater = new ResourceDictionary();
-            translater.Source =
-                new Uri("..\\Resources/Resources." + $"{language}" + ".xaml",
-                        UriKind.RelativeOrAbsolute);
-
-            MessageLabel.Content = translater[message];
+            MessageLabel.Content = LanguageService.Translate(message, language);
         }
 
         private void OnClick_ReturnBoolValue(object sender, RoutedEventArgs e)
