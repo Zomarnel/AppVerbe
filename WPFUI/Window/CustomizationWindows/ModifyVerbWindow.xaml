@@ -3,13 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:viewModels="clr-namespace:AppVerbe.ViewModels;assembly=AppVerbe.ViewModels"
-        d:DataContext="{d:DesignInstance viewModels:AppSession}"
-        xmlns:local="clr-namespace:WPFUI.Window"
+        xmlns:models="clr-namespace:AppVerbe.Models;assembly=AppVerbe.Models"
+        d:DataContext="{d:DesignInstance models:Verbe}"
+        xmlns:local="clr-namespace:WPFUI.CustomConverters"
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
         FontSize="11pt"
         Title="ModifyVerbWindow" Height="450" Width="450">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -47,6 +48,7 @@
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
+                            <Setter Property="ToolTip" Value="{Binding ToolTipContent}"/>
                             <Setter Property="Background" Value="LightCoral"/>
                         </Style>
 
@@ -60,6 +62,7 @@
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
+                            <Setter Property="ToolTip" Value="{Binding ToolTipContent}"/>
                             <Setter Property="Background" Value="PaleGoldenrod"/>
                         </Style>
                     </DataGridTextColumn.CellStyle>

@@ -30,7 +30,7 @@
                 <MenuItem Header="{DynamicResource LanguageMenuFrench}" CommandParameter="fr" Click="ChangeLanguage_OnClick"/>
                 <MenuItem Header="{DynamicResource LanguageMenuGerman}" CommandParameter="de" Click="ChangeLanguage_OnClick"/>
             </MenuItem>
-            <MenuItem Header="{DynamicResource NewListMenu}" Height="30"/>
+            <MenuItem Header="{DynamicResource NewListMenu}" Click="NewList_OnClick" Height="30"/>
         </Menu>
 
         <Border Grid.Row="2" BorderBrush="Black" Background="LightCoral"/>

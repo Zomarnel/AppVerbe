@@ -53,12 +53,12 @@
         </Grid>
 
 
-        <Label Grid.Row="1" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="Je" x:Name="LBPPS" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="Tu" x:Name="LBDPS" VerticalAlignment="Center"/>
-        <Label Grid.Row="3" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="Il/Elle" x:Name="LBTPS" VerticalAlignment="Center"/>
-        <Label Grid.Row="4" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="Nous" x:Name="LBPPP" VerticalAlignment="Center"/>
-        <Label Grid.Row="5" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="Vous" x:Name="LBDPP" VerticalAlignment="Center"/>
-        <Label Grid.Row="6" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="Ils/Ellent" x:Name="LBTPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelFirstPerson}" x:Name="LBPPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelSecondPerson}" x:Name="LBDPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelThirdPerson}" x:Name="LBTPS" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelFourthPerson}" x:Name="LBPPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelFifthPerson}" x:Name="LBDPP" VerticalAlignment="Center"/>
+        <Label Grid.Row="6" Margin="10" Grid.Column="0" FontWeight="DemiBold" FontSize="12pt" Content="{DynamicResource LabelSixthPerson}" x:Name="LBTPP" VerticalAlignment="Center"/>
 
         <!--#region TextBoxes-->
         <TextBox Grid.Row="1" Grid.Column="1"
@@ -108,7 +108,7 @@
         
         <!-- Buttons -->
         <Grid Grid.Row="7" Grid.ColumnSpan="2">
-            <Button Content="Confirm"
+            <Button Content="{DynamicResource ButtonConfirm}"
                     Click="ValidateVerbes"/>
         </Grid>
         

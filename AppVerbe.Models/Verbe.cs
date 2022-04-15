@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace AppVerbe.Models
@@ -8,7 +9,10 @@ namespace AppVerbe.Models
         public string Name { get; set; }
 
         public string Temps { get; set; }
+
         public List<ConjuguatedForm> ConjuguatedForms { get; set; }
+
+        public string ToolTipContent { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

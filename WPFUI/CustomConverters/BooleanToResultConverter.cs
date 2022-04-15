@@ -13,13 +13,15 @@ namespace WPFUI.CustomConverters
                 throw new InvalidCastException("Cannot convert null value.");
             }
 
-            if((bool)value)
+            if ((bool)value)
             {
-                return "Correct!";
-            }else
-            {
-                return "Wrong!";
+                return LanguageService.Translate("Correct", LanguageService.LastUsedLanguage);
             }
+            else
+            {
+                return LanguageService.Translate("Wrong", LanguageService.LastUsedLanguage);
+            }
+
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

@@ -33,6 +33,8 @@ namespace WPFUI
 
             _appSession = appSession;
 
+            LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
+
             textBoxes = new List<System.Windows.Controls.TextBox>
             {
                 PPS,
@@ -149,9 +151,11 @@ namespace WPFUI
             {
                 MessageBroker.CreateNewMessage(this, "You_Did_It!", _appSession.AppData.App_Language);
 
-                ResultsWindow resultsWindow = new ResultsWindow(_finalResults);
+                ResultsWindow resultsWindow = new ResultsWindow(_finalResults, _appSession.AppData.App_Language);
 
                 resultsWindow.Owner = this;
+
+
                 resultsWindow.ShowDialog();
 
                 Close();

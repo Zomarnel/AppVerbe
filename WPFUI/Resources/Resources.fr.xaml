@@ -31,9 +31,11 @@
     <system:String x:Key="ButtonResetVerb">Resetter Verbe</system:String>
     <system:String x:Key="ButtonDelete">ÉLIMINER</system:String>
     <system:String x:Key="ButtonModify">Modifier</system:String>
+    <system:String x:Key="ButtonConfirm">Confirmer</system:String>
+    <system:String x:Key="ButtonClose">Ferme ta gueule</system:String>
 
     <system:String x:Key="MessageTitle">Message! Baguette!</system:String>
-    <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Verbe ajouté sans aucun problème à la Liste!</system:String>
+    <system:String x:Key="Successfully_added_a_verb_to_the_current_list!">Verbe ajouté à la Liste!</system:String>
     <system:String x:Key="Missing_Name">Nom Manquant</system:String>
     <system:String x:Key="Missing_Time">Temps Manquant</system:String>
     <system:String x:Key="Missing_Conjuguated_Form">Forme Conjugué Manquante</system:String>
@@ -44,5 +46,16 @@
 
     <system:String x:Key="VerbName">Verbe</system:String>
     <system:String x:Key="VerbTime">Temps</system:String>
+
+    <system:String x:Key="Je">Je</system:String>
+    <system:String x:Key="Tu">Tu</system:String>
+    <system:String x:Key="Il/Elle">Il/Elle</system:String>
+    <system:String x:Key="Nous">Nous</system:String>
+    <system:String x:Key="Vous">Vous</system:String>
+    <system:String x:Key="Ils/Elles">Ils/Elles</system:String>
+
+    <system:String x:Key="Final Results: ">Résultats Finals:</system:String>
+    <system:String x:Key="Correct">Correct!</system:String>
+    <system:String x:Key="Wrong">Faux!</system:String>
 
 </ResourceDictionary>

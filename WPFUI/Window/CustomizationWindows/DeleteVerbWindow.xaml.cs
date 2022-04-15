@@ -16,9 +16,11 @@ namespace WPFUI.Window
 
             _appSession = appSession;
 
-            _appSession.CheckedVerbes = _appSession.AppData.ConvertVerbesToChecked();
+            ToolTipService.CreateToolTipForEachVerb(_appSession.AppData.Verbes, _appSession.AppData.App_Language);
 
             LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
+
+            _appSession.CheckedVerbes = _appSession.AppData.ConvertVerbesToChecked();
 
             DataContext = _appSession;
         }

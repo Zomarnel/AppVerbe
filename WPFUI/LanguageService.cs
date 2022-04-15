@@ -3,10 +3,14 @@ using System.Windows;
 
 namespace WPFUI
 {
-    public class LanguageService
+    public static class LanguageService
     {
+        public static string LastUsedLanguage = "en";
+
         public static void ChangeLanguage(System.Windows.Window window, string language)
         {
+            LastUsedLanguage = language;
+
             ResourceDictionary resourceDictionary = new ResourceDictionary();
 
             switch (language)
@@ -26,6 +30,23 @@ namespace WPFUI
             }
 
             window.Resources.MergedDictionaries.Add(resourceDictionary);
+        }
+
+        public static string Translate(string phrase, string language)
+        {
+            LastUsedLanguage = language;
+
+            ResourceDictionary resourceDictionary = new ResourceDictionary();
+
+            resourceDictionary.Source = new Uri("..\\Resources/Resources." + $"{language}" + ".xaml", UriKind.Relative);
+
+            try
+            {
+                return (string)resourceDictionary[phrase];
+            }catch
+            {
+                throw new NotImplementedException($"Bruh {phrase} cannot be translated!!!");
+            }
         }
     }
 }

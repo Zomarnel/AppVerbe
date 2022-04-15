@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 
 namespace AppVerbe.Models
 {
@@ -16,6 +17,8 @@ namespace AppVerbe.Models
 
         public string ReturnPersonneInStringFormat()
         {
+            
+
             switch(Personne)
             {
                 case 1:
@@ -29,7 +32,7 @@ namespace AppVerbe.Models
                 case 5:
                     return "Vous";
                 case 6:
-                    return "Ils/Ellent";
+                    return "Ils/Elles";
                 default:
                     throw new InvalidCastException();
             }

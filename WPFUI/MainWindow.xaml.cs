@@ -6,6 +6,7 @@ using AppVerbe.ViewModels;
 using AppVerbe.Services;
 using AppVerbe.Models;
 using WPFUI.Window;
+using System.Collections.Generic;
 
 namespace WPFUI
 {
@@ -14,7 +15,7 @@ namespace WPFUI
         private const string SAVE_LIST_FILE_EXTENSION = "omar";
         private AppSession _appSession;
 
-        private double WIDTH_HEIGHT = 150; 
+        private double WIDTH_HEIGHT = 150;
 
         public MainWindow()
         {
@@ -68,6 +69,11 @@ namespace WPFUI
                 randomVerbWindow.ShowDialog();
                 
             }
+        }
+
+        private void NewList_OnClick(object sender, RoutedEventArgs e)
+        {
+            _appSession.AppData = new AppData("DefaultList", new List<Verbe>());
         }
 
         private void MainCanvas_SizeChanged(object sender, SizeChangedEventArgs e)

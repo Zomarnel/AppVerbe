@@ -19,6 +19,8 @@ namespace WPFUI.Window
 
             LanguageService.ChangeLanguage(this, _appSession.AppData.App_Language);
 
+            ToolTipService.CreateToolTipForEachVerb(_appSession.AppData.Verbes, _appSession.AppData.App_Language);
+
             DataContext = _appSession;
         }
 
@@ -30,7 +32,11 @@ namespace WPFUI.Window
 
             verbModificationWindow.Owner = this.Owner;
 
+            LanguageService.ChangeLanguage(verbModificationWindow, _appSession.AppData.App_Language);
+
             verbModificationWindow.ShowDialog();
+
+            ToolTipService.CreateToolTipForEachVerb(_appSession.AppData.Verbes, _appSession.AppData.App_Language);
         }
     }
 }

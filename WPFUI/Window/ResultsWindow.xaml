@@ -23,11 +23,11 @@
 
         <Border Grid.RowSpan="2" Background="PaleGreen"/>
         
-        <Label Grid.Row="0" Content="{Binding ResultsStringFormat}" HorizontalContentAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
+        <Label Grid.Row="0" x:Name="ResultsLabel"  HorizontalContentAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
 
         <DataGrid Grid.Row="1" RowHeight="40" RowBackground="AliceBlue" ItemsSource="{Binding Results}" AutoGenerateColumns="False" Margin="10, 0" HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" VerticalScrollBarVisibility="Auto" CanUserSortColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Verbe:"
+                <DataGridTextColumn Header="Verb"
                                     IsReadOnly="True"
                                     Width="*"
                                     Binding="{Binding Verbe.Name}" FontWeight="DemiBold" FontSize="17">
@@ -39,7 +39,7 @@
                     </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
                 
-                <DataGridTextColumn Header="Temps"
+                <DataGridTextColumn Header="Time"
                                     IsReadOnly="True"
                                     Width="*"
                                     Binding="{Binding Verbe.Temps}">
@@ -51,7 +51,7 @@
                     </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
 
-                <DataGridTextColumn Header="Result:"
+                <DataGridTextColumn Header="Results:"
                                     IsReadOnly="True"
                                     Width="Auto"
                                     Binding="{Binding Result, Converter={StaticResource ResultConverter}}">

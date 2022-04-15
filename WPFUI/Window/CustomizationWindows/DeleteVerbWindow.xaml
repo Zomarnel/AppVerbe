@@ -54,7 +54,7 @@
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
-                            <Setter Property="ToolTip" Value="{Binding ToolTipContent}"/>
+                            <Setter Property="ToolTip" Value="{Binding Verbe.ToolTipContent}"/>
                             <Setter Property="Background" Value="LightCoral"/>
                         </Style>
                         
@@ -68,7 +68,7 @@
 
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
-                            <Setter Property="ToolTip" Value="{Binding ToolTipContent}"/>
+                            <Setter Property="ToolTip" Value="{Binding Verbe.ToolTipContent}"/>
                             <Setter Property="Background" Value="PaleGoldenrod"/>
                         </Style>
                     </DataGridTextColumn.CellStyle>
