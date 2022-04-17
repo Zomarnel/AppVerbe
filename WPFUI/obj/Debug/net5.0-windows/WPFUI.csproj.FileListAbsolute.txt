@@ -3,7 +3,6 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\WPFU
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\WPFUI.runtimeconfig.json
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\WPFUI.runtimeconfig.dev.json
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\WPFUI.dll
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\ref\WPFUI.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\WPFUI.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\bin\Debug\net5.0-windows\PropertyChanged.dll
@@ -51,3 +50,4 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFU
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\ref\WPFUI.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\WPFUI.genruntimeconfig.cache
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\WPFUI\obj\Debug\net5.0-windows\refint\WPFUI.dll

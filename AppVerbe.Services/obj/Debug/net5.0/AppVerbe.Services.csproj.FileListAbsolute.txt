@@ -1,6 +1,5 @@
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\bin\Debug\net5.0\AppVerbe.Services.deps.json
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\bin\Debug\net5.0\AppVerbe.Services.dll
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\bin\Debug\net5.0\ref\AppVerbe.Services.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\bin\Debug\net5.0\AppVerbe.Services.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\bin\Debug\net5.0\AppVerbe.Models.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\bin\Debug\net5.0\AppVerbe.Models.pdb
@@ -13,3 +12,4 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\obj\Debug\net5.0\
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\obj\Debug\net5.0\AppVerbe.Services.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\obj\Debug\net5.0\ref\AppVerbe.Services.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\obj\Debug\net5.0\AppVerbe.Services.pdb
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Services\obj\Debug\net5.0\refint\AppVerbe.Services.dll

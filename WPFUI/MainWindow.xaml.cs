@@ -97,7 +97,6 @@ namespace WPFUI
             SaveFileDialog saveFileDialog =
                 new SaveFileDialog
                 {
-                    InitialDirectory = AppDomain.CurrentDomain.BaseDirectory,
                     Filter = $"Save games (*.{SAVE_LIST_FILE_EXTENSION})|*.{SAVE_LIST_FILE_EXTENSION}"
                 };
 
@@ -112,7 +111,6 @@ namespace WPFUI
             OpenFileDialog openFileDialog =
                 new OpenFileDialog
                 {
-                    InitialDirectory = AppDomain.CurrentDomain.BaseDirectory,
                     Filter = $"Save games (*.{SAVE_LIST_FILE_EXTENSION})|*.{SAVE_LIST_FILE_EXTENSION}"
                 };
 

@@ -2,9 +2,9 @@
   "Name": "DefaultList",
   "Verbes": [
     {
-      "ToolTipContent": "I         ate\r\nYou         ate\r\nHe/She         ate\r\nYou         ate\r\nWe         ate\r\nThey         ate\r\n",
       "Name": "eat",
       "Temps": "past simple",
+      "ToolTipContent": "I         ate\r\nYou         ate\r\nHe/She         ate\r\nYou         ate\r\nWe         ate\r\nThey         ate\r\n",
       "ConjuguatedForms": [
         {
           "Personne": 1,
@@ -33,9 +33,9 @@
       ]
     },
     {
-      "ToolTipContent": "I         am making\r\nYou         are making\r\nHe/She         is making\r\nYou         are making\r\nWe         are making\r\nThey         are making\r\n",
       "Name": "make",
       "Temps": "present continuos",
+      "ToolTipContent": "I         am making\r\nYou         are making\r\nHe/She         is making\r\nYou         are making\r\nWe         are making\r\nThey         are making\r\n",
       "ConjuguatedForms": [
         {
           "Personne": 1,
@@ -64,9 +64,9 @@
       ]
     },
     {
-      "ToolTipContent": "I         flew\r\nYou         flew\r\nHe/She         flew\r\nYou         flew\r\nWe         flew\r\nThey         flew\r\n",
       "Name": "fly",
       "Temps": "past simple",
+      "ToolTipContent": "I         flew\r\nYou         flew\r\nHe/She         flew\r\nYou         flew\r\nWe         flew\r\nThey         flew\r\n",
       "ConjuguatedForms": [
         {
           "Personne": 1,
@@ -91,6 +91,37 @@
         {
           "Personne": 6,
           "VerbeConjugué": "flew"
+        }
+      ]
+    },
+    {
+      "Name": "add",
+      "Temps": "present",
+      "ToolTipContent": null,
+      "ConjuguatedForms": [
+        {
+          "Personne": 1,
+          "VerbeConjugué": "add"
+        },
+        {
+          "Personne": 2,
+          "VerbeConjugué": "add"
+        },
+        {
+          "Personne": 3,
+          "VerbeConjugué": "adds"
+        },
+        {
+          "Personne": 4,
+          "VerbeConjugué": "add"
+        },
+        {
+          "Personne": 5,
+          "VerbeConjugué": "add"
+        },
+        {
+          "Personne": 6,
+          "VerbeConjugué": "add"
         }
       ]
     }

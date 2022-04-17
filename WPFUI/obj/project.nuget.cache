@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "svwXSnIpY7iN+cLxnCWgr6Y8qqxwAITUj/yP+yTSahB6kT4ZV0UE/2v1NVgKHRmuxjD2rj8dMwq032EZuohwsw==",
+  "dgSpecHash": "boQ3QXcHiN1lUc2qTbZ9B4rwjAW4f4Dx9mjXfivgiV3tdw4uJSG5R6hRqTTKkKahVyvHhinkYg3z/kva6FoJfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bouazza\\Desktop\\C#Projects\\AppVerbe\\WPFUI\\WPFUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bouazza\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\Bouazza\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512"
+    "C:\\Users\\Bouazza\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
+    "C:\\Users\\Bouazza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
   ],
   "logs": []
 }

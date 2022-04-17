@@ -1,6 +1,5 @@
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Models.deps.json
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Models.dll
-C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\ref\AppVerbe.Models.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\bin\Debug\net5.0\AppVerbe.Models.pdb
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.csproj.AssemblyReference.cache
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.GeneratedMSBuildEditorConfig.editorconfig
@@ -11,3 +10,4 @@ C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\Ap
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\ref\AppVerbe.Models.dll
 C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\AppVerbe.Models.pdb
+C:\Users\Bouazza\Desktop\C#Projects\AppVerbe\AppVerbe.Models\obj\Debug\net5.0\refint\AppVerbe.Models.dll
